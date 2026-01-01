@@ -1,0 +1,51 @@
+.footer {
+  background-color: #2a3238;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.scrollTop {
+  width: 56px;
+  height: 96px;
+
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  margin-bottom: 40px;
+}
+
+.scrollTop:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.copy {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.legal {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .scrollTop {
+    height: 80px;
+  }
+}
