@@ -38,14 +38,14 @@ const config: Config = {
   url: "https://BenjaminTietz.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/DevSecOps-Portfolio/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "BenjaminTietz", // Usually your GitHub org/user name.
   projectName: "DevSecOps-Portfolio", // Usually your repo name.
 
-  deploymentBranch: "development",
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -66,7 +66,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/BenjaminTietz/DevSecOps-Blog",
+          editUrl: "https://github.com/BenjaminTietz/DevSecOps-Portfolio",
         },
         blog: blogEnabled
           ? {
