@@ -16,8 +16,8 @@ export const projects: Project[] = [
       "Automated Minecraft server setup with CI/CD, containerization and security hardening.",
     image: "/img/portfolio/projects/minecraft.png",
     tech: ["yaml", "shell", "security", "container"],
-    docUrl: "#",
-    githubUrl: "#",
+    docUrl: "docs/projects/minecraft-server",
+    githubUrl: "https://github.com/BenjaminTietz/minecraft-server",
   },
   {
     id: "baby-tools-shop",
@@ -26,8 +26,8 @@ export const projects: Project[] = [
       "E-commerce platform for baby products with integrated DevSecOps practices.",
     image: "/img/portfolio/projects/baby-tools-shop.png",
     tech: ["yaml", "shell", "security", "container"],
-    docUrl: "#",
-    githubUrl: "#",
+    docUrl: "docs/projects/baby-tools-shop",
+    githubUrl: "https://github.com/BenjaminTietz/baby-tools-shop",
   },
   {
     id: "truck-signs-api",
@@ -36,8 +36,8 @@ export const projects: Project[] = [
       "API for managing truck signs with real-time updates and secure access.",
     image: "/img/portfolio/projects/truck-signs-api.png",
     tech: ["yaml", "shell", "security", "container"],
-    docUrl: "#",
-    githubUrl: "#",
+    docUrl: "docs/projects/truck-signs-api",
+    githubUrl: "https://github.com/BenjaminTietz/truck_signs_api",
   },
   {
     id: "juice-shop-meister",
@@ -56,7 +56,38 @@ export const projects: Project[] = [
       "E-commerce platform for hosting services with DevSecOps practices.",
     image: "/img/portfolio/projects/wordpress-hosten.png",
     tech: ["yaml", "shell", "security", "container"],
-    docUrl: "#",
-    githubUrl: "#",
+    docUrl: "docs/projects/wordpress",
+    githubUrl:
+      "https://benjamintietz.github.io/DevSecOps-Portfolio/docs/projects/wordpress",
+  },
+  {
+    id: "v-server setup",
+    title: "V-Server Setup",
+    description:
+      "Automated V-Server setup with CI/CD, containerization and security hardening.",
+    image: "/img/portfolio/projects/v-server-setup.png",
+    tech: ["yaml", "shell", "security", "container"],
+    docUrl: "docs/projects/v-server-setup/",
+    githubUrl: "https://github.com/BenjaminTietz/v-server-setup",
+  },
+  {
+    id: "conduit-deployment",
+    title: "Conduit Deployment",
+    description:
+      "Automated Conduit deployment with CI/CD, containerization and security hardening.",
+    image: "/img/portfolio/projects/conduit-deploy.png",
+    tech: ["yaml", "shell", "security", "container"],
+    docUrl: "docs/projects/conduit-deploy",
+    githubUrl: "https://github.com/BenjaminTietz/conduit-deployment",
+  },
+  {
+    id: "conduit-compose",
+    title: "Conduit Compose",
+    description:
+      "Automated Conduit deployment with CI/CD, containerization and security hardening.",
+    image: "/img/portfolio/projects/conduit-deploy.png",
+    tech: ["yaml", "shell", "security", "container"],
+    docUrl: "docs/projects/conduit-compose",
+    githubUrl: "https://github.com/BenjaminTietz/conduit-compose",
   },
 ];
