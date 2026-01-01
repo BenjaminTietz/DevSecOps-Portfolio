@@ -26,7 +26,10 @@ const ProjectHighlights: React.FC = () => {
             ))}
           </ol>
 
-          <a className={styles.more} href="#more-projects">
+          <a
+            className={styles.more}
+            href={useBaseUrl("/docs/projects/overview/")}
+          >
             ↳ see more projects
           </a>
         </div>
