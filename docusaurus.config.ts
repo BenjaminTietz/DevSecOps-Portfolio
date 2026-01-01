@@ -45,7 +45,7 @@ const config: Config = {
   organizationName: "BenjaminTietz", // Usually your GitHub org/user name.
   projectName: "DevSecOps-Blog", // Usually your repo name.
 
-  deploymentBranch: "main",
+  deploymentBranch: "dev",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
