@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -21,9 +22,7 @@ const Footer: React.FC = () => {
 
       <div className={styles.content}>
         <p className={styles.copy}>© Felix Wallke 2025</p>
-        <a href="/legal-notice" className={styles.legal}>
-          Legal notice
-        </a>
+        <a href={useBaseUrl("/legal-notice")}>Legal notice</a>
       </div>
     </footer>
   );
