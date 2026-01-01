@@ -30,7 +30,7 @@ if (blogEnabled) {
 }
 
 const config: Config = {
-  title: "DSO Live Demo Docs",
+  title: "DSO Portfolio & Docs",
   tagline: "Dinosaurs are cool",
   favicon: "img/logo.png",
 
