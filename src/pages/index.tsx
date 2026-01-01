@@ -5,6 +5,7 @@ import Header from "../components/portfolio/header";
 import Hero from "../components/portfolio/hero";
 import Skills from "../components/portfolio/skills";
 import ProjectHighlights from "../components/portfolio/project-highlights";
+import Contact from "../components/portfolio/contact";
 
 export default function Home(): JSX.Element {
   return (
@@ -13,6 +14,7 @@ export default function Home(): JSX.Element {
       <Hero />
       <Skills />
       <ProjectHighlights />
+      <Contact />
     </section>
   );
 }
