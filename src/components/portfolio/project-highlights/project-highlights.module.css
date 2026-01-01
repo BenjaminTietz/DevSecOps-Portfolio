@@ -1,0 +1,185 @@
+.section {
+  background-color: #4a6fdc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 80px;
+
+  padding-left: 110px;
+  padding-right: 106px;
+}
+
+.projectList {
+  width: 280px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-quicksand);
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.list {
+  list-style: decimal;
+  padding-left: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.list li {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 120%;
+  font-weight: 500;
+  font-family: var(--font-quicksand);
+  opacity: 0.8;
+}
+
+.list li:hover {
+  opacity: 1;
+}
+
+.active {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.more {
+  display: inline-block;
+  margin-top: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card {
+  flex: 1;
+  background-color: #344054;
+  border-radius: 24px;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.cardHeader {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-quicksand);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cardHeader h3 {
+  font-size: 28px;
+}
+
+.tags {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: var(--font-quicksand);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: #ffffff;
+  color: #344054;
+
+  padding: 6px 12px;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tagIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.cardContent {
+  display: flex;
+  gap: 32px;
+}
+
+.image {
+  width: 240px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.cardContent p {
+  font-size: 20px;
+  line-height: 125%;
+  font-weight: 400;
+  font-family: var(--font-quicksand);
+}
+
+.actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.primaryBtn {
+  background-color: #4a6fdc;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  font-family: var(--font-quicksand);
+}
+
+.secondaryBtn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  font-family: var(--font-quicksand);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .projectList {
+    width: 100%;
+  }
+
+  .cardContent {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}

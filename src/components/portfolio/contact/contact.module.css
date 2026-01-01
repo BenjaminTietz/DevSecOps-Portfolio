@@ -1,0 +1,95 @@
+.section {
+  background-color: #2a3238;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+
+  padding-left: 110px;
+  padding-right: 106px;
+  color: #ffffff;
+}
+
+.left {
+  max-width: 520px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-quicksand);
+  margin-bottom: 24px;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--font-quicksand);
+  padding-left: 18px;
+}
+
+.list li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.right {
+  max-width: 420px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  font-family: var(--font-quicksand);
+  margin-bottom: 32px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.contactItem img {
+  width: 36px;
+  height: 36px;
+}
+
+.contactItem a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  font-family: var(--font-quicksand);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+}
