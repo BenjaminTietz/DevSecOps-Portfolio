@@ -33,6 +33,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+html,
+body,
+.main-wrapper {
+  scroll-behavior: smooth;
+}
+
 html {
   scroll-behavior: smooth;
   width: 100%;

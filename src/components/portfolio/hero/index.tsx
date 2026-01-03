@@ -46,7 +46,14 @@ const Hero: React.FC = () => {
               superusers are created without magic flags.
             </p>
 
-            <button className={styles.cta}>Contact me (no open ports)</button>
+            <button
+              type="button"
+              aria-label="Contact me"
+              onClick={() => (window.location.href = "#contact")}
+              className={styles.cta}
+            >
+              Contact me (no open ports)
+            </button>
           </div>
         </div>
 

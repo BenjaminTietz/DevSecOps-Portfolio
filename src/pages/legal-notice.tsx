@@ -11,6 +11,24 @@ const LegalNotice: React.FC = () => {
           margin: "0 auto",
         }}
       >
+        <a
+          href="/DevSecOps-Portfolio"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            marginBottom: "40px",
+            padding: "8px 16px",
+            borderRadius: "6px",
+            background: "#4a6fdc",
+            color: "#fff",
+            textDecoration: "none",
+            fontWeight: 500,
+          }}
+        >
+          ← Back to portfolio
+        </a>
+
         <h1>Impressum</h1>
 
         <h2>Angaben gemäß § 5 TMG</h2>
