@@ -5,7 +5,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero} id="about">
-      <div className={styles.container}>
+      <div className={`layout-container ${styles.container}`}>
         {/* LEFT SIDE (Text) */}
         <div className={styles.textColumn}>
           <div className={styles.textTop}>

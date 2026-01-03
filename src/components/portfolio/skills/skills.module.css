@@ -6,7 +6,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-
+  display: block;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 110px;
@@ -17,9 +17,14 @@
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
+  font-size: bold;
   color: #ffffff;
   margin-bottom: 64px;
   font-family: var(--font-quicksand);
+}
+
+.subTitle {
+  display: none;
 }
 
 .grid {
@@ -72,11 +77,12 @@
 }
 
 .backTitle {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
   color: #ffffff;
   margin-bottom: 16px;
-  font-family: var(--font-quicksand);
+  font-family: var(--font-reddit);
 }
 
 .backList {
@@ -84,8 +90,9 @@
 }
 
 .backList li {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 6px;
 }
@@ -108,11 +115,21 @@
   }
 
   .title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #ffffff;
     margin-bottom: 32px;
   }
 
+  .subTitle {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 40px;
+    font-family: var(--font-quicksand);
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -124,5 +141,17 @@
 
   .card {
     height: 140px;
+  }
+  .backTitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-size: semibold;
+    line-height: 120%;
+  }
+
+  .backList li {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
   }
 }

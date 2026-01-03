@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 
   return (
     <header id="top" className={styles.header}>
-      <div className={styles.container}>
+      <div className={`layout-container ${styles.container}`}>
         {/* Desktop Navigation */}
         <nav className={styles.nav}>
           <a href="#about">About me</a>

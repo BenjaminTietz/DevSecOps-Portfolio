@@ -70,9 +70,9 @@ const skills = [
 const Skills: React.FC = () => {
   return (
     <section className={styles.skills} id="skills">
-      <div className={styles.container}>
+      <div className={`layout-container ${styles.container}`}>
         <h2 className={styles.title}>My skills</h2>
-
+        <div className={styles.subTitle}>Where I applied my skills</div>
         <div className={styles.grid}>
           {skills.map((skill) => (
             <div key={skill.label} className={styles.card}>
