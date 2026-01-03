@@ -10,25 +10,35 @@ const Contact: React.FC = () => {
         <div className={styles.left}>
           <h2 className={styles.title}>Contact me</h2>
 
-          <p className={styles.text}>Include the information like:</p>
+          <p className={styles.text}>
+            If you made it this far, congratulations — you survived the
+            portfolio without exposing any ports.
+          </p>
 
           <ul className={styles.list}>
-            <li>Feel free to reach out with job offers or opportunities</li>
-            <li>What role are you looking for?</li>
-            <li>How you will contribute to the new team</li>
-            <li>Are you open for remote work or relocation?</li>
+            <li>
+              Feel free to reach out with real job offers (not course upsells)
+            </li>
+            <li>Tell me what problem you actually want to solve</li>
+            <li>
+              Let’s talk about systems that work in production — not in slides
+            </li>
+            <li>
+              Remote? Hybrid? On-site? As long as security scans stay green
+            </li>
           </ul>
         </div>
 
         {/* RIGHT */}
         <div className={styles.right}>
           <p className={styles.subtitle}>
-            Looking forward to hearing from you!
+            I’ve already invested heavily in expensive lessons — now I prefer
+            paid work.
           </p>
 
           <div className={styles.contactItem}>
             <img src={useBaseUrl("/img/portfolio/icons/mail.png")} alt="Mail" />
-            <a href="mailto:felix.wallke@gmail.com">felix.wallke@gmail.com</a>
+            <a href="mailto:felix.wallke@gmail.com">security.wayne@gmail.com</a>
           </div>
 
           <div className={styles.contactItem}>
@@ -37,7 +47,7 @@ const Contact: React.FC = () => {
               alt="LinkedIn"
             />
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              Profile Page
+              LinkedIn (mentor reviews not included)
             </a>
           </div>
         </div>
