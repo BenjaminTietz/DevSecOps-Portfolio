@@ -48,7 +48,6 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-
   transition: opacity 0.2s ease;
 }
 
@@ -63,13 +62,13 @@
   font-weight: 500;
   color: #ffffff;
   font-family: var(--font-reddit);
+  text-align: center;
 }
 
 .back {
   position: absolute;
   inset: 0;
   background-color: #5b7192;
-  border-radius: 20px;
   padding: 24px;
   opacity: 0;
   pointer-events: none;
@@ -81,7 +80,7 @@
   font-weight: 500;
   line-height: 120%;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-family: var(--font-reddit);
 }
 
@@ -90,7 +89,7 @@
 }
 
 .backList li {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   font-weight: 400;
   color: #ffffff;
@@ -104,6 +103,19 @@
 .card:hover .back {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .backTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  .backList li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -130,28 +142,65 @@
     margin-bottom: 40px;
     font-family: var(--font-quicksand);
   }
+
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
+  .front {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
   .back {
-    display: none;
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    padding: 16px 0 0 0;
   }
 
   .card {
-    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    padding: 24px;
+    height: auto;
   }
+
+  .card:hover .front {
+    opacity: 1;
+  }
+
+  .card:hover .back {
+    opacity: 1;
+  }
+
   .backTitle {
-    font-size: 18px;
-    font-weight: 600;
-    font-size: semibold;
-    line-height: 120%;
+    display: none;
   }
 
   .backList li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .label {
+    text-align: center;
     font-size: 16px;
-    line-height: 100%;
-    font-weight: 400;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  .backList {
+    width: 100%;
   }
 }
