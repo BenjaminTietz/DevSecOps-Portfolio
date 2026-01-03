@@ -4,10 +4,8 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const header = document.getElementById("top");
+    header?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

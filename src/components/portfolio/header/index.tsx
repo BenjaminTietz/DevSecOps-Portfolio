@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className={styles.header}>
+    <header id="top" className={styles.header}>
       <div className={styles.container}>
         {/* Desktop Navigation */}
         <nav className={styles.nav}>
