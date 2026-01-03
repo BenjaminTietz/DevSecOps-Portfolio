@@ -6,7 +6,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-
+  display: block;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 110px;
@@ -17,9 +17,14 @@
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
+  font-size: bold;
   color: #ffffff;
   margin-bottom: 64px;
   font-family: var(--font-quicksand);
+}
+
+.subTitle {
+  display: none;
 }
 
 .grid {
@@ -43,7 +48,6 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-
   transition: opacity 0.2s ease;
 }
 
@@ -58,13 +62,13 @@
   font-weight: 500;
   color: #ffffff;
   font-family: var(--font-reddit);
+  text-align: center;
 }
 
 .back {
   position: absolute;
   inset: 0;
   background-color: #5b7192;
-  border-radius: 20px;
   padding: 24px;
   opacity: 0;
   pointer-events: none;
@@ -72,11 +76,12 @@
 }
 
 .backTitle {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
   color: #ffffff;
-  margin-bottom: 16px;
-  font-family: var(--font-quicksand);
+  margin-bottom: 8px;
+  font-family: var(--font-reddit);
 }
 
 .backList {
@@ -84,8 +89,9 @@
 }
 
 .backList li {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 6px;
 }
@@ -99,6 +105,19 @@
   pointer-events: auto;
 }
 
+@media (max-width: 1024px) {
+  .backTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  .backList li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding-top: 80px;
@@ -108,21 +127,80 @@
   }
 
   .title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #ffffff;
     margin-bottom: 32px;
   }
 
+  .subTitle {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 40px;
+    font-family: var(--font-quicksand);
+  }
+
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
+  .front {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
   .back {
-    display: none;
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    padding: 16px 0 0 0;
   }
 
   .card {
-    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    padding: 24px;
+    height: auto;
+  }
+
+  .card:hover .front {
+    opacity: 1;
+  }
+
+  .card:hover .back {
+    opacity: 1;
+  }
+
+  .backTitle {
+    display: none;
+  }
+
+  .backList li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .label {
+    text-align: center;
+    font-size: 16px;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  .backList {
+    width: 100%;
   }
 }

@@ -59,3 +59,34 @@ h5,
 h6 {
   font-family: var(--font-quicksand);
 }
+
+/* === GLOBAL LAYOUT CONTAINER === */
+.layout-container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 106px 80px 110px;
+  gap: 64px;
+}
+
+@media (max-width: 1280px) {
+  .layout-container {
+    padding-inline: 64px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout-container {
+    padding-inline: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    padding-inline: 24px;
+  }
+}
