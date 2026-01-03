@@ -27,25 +27,31 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className={styles.mobileMenu}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>
-            About me
-          </a>
-          <a href="#skills" onClick={() => setMenuOpen(false)}>
-            My skills
-          </a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>
-            My projects
-          </a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>
-            Contact
-          </a>
-        </div>
-      )}
+      {/* Mobile Overlay Menu */}
+      <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
+        {/* Close Button */}
+        <button
+          className={styles.close}
+          onClick={() => setMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
+
+        <a href="#about" onClick={() => setMenuOpen(false)}>
+          About me
+        </a>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>
+          My skills
+        </a>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>
+          My projects
+        </a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>
+          Contact
+        </a>
+      </div>
     </header>
   );
 };
-
 export default Header;

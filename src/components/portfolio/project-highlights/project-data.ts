@@ -13,7 +13,7 @@ export const projects: Project[] = [
     id: "minecraft",
     title: "Project Minecraft",
     description:
-      "Automated Minecraft server setup with CI/CD, containerization and security hardening.",
+      "A community-provided Minecraft server image deployed with Docker and verified using a ping. A gentle introduction to containerization, proving that if the container starts, the server probably exists.",
     image: "/img/portfolio/projects/minecraft.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/minecraft-server",
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     id: "baby-tools-shop",
     title: "Baby Tools Shop",
     description:
-      "E-commerce platform for baby products with integrated DevSecOps practices.",
+      "A legacy Django fullstack application — partially broken, unexpectedly documented in Turkish, and containerized as-is. A real-world lesson in working with inherited software you didn’t choose.",
     image: "/img/portfolio/projects/baby-tools-shop.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/baby-tools-shop",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: "truck-signs-api",
     title: "Truck Signs API",
     description:
-      "API for managing truck signs with real-time updates and secure access.",
+      "A severely misconfigured Django API with broken defaults, unclear structure, and creative security assumptions. Notable for inspiring the legendary advice to create a superuser using a flag that does not exist — yet still receiving approval.",
     image: "/img/portfolio/projects/truck-signs-api.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/truck-signs-api",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     id: "juice-shop-meister",
     title: "Juice Shop Meister",
     description:
-      "E-commerce platform for juice products with DevSecOps practices.",
+      "A small e-commerce-style project focused on containerization and deployment. Demonstrates that packaging software securely does not automatically improve the software itself.",
     image: "/img/portfolio/projects/juice-shop-meister.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "#",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     id: "wordpress-hosten",
     title: "WordPress Hosten",
     description:
-      "E-commerce platform for hosting services with DevSecOps practices.",
+      "Classic WordPress deployment using Docker and MariaDB. Straightforward, predictable, and a reminder that not every DevSecOps task needs to be dramatic to be functional.",
     image: "/img/portfolio/projects/wordpress-hosten.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/wordpress",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     id: "v-server setup",
     title: "V-Server Setup",
     description:
-      "Automated V-Server setup with CI/CD, containerization and security hardening.",
+      "Initial V-Server provisioning and container deployment. Also known as the project that later received an external security notification due to an exposed database port — a far more effective review than any checklist.",
     image: "/img/portfolio/projects/v-server-setup.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/v-server-setup/",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     id: "conduit-deployment",
     title: "Conduit Deployment",
     description:
-      "Automated Conduit deployment with CI/CD, containerization and security hardening.",
+      "Deployment of a legacy Angular frontend (partially upgraded) combined with a Django backend using insecure default configurations. Particularly educational in highlighting the gap between deployment success and data protection compliance.",
     image: "/img/portfolio/projects/conduit-deploy.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/conduit-deploy",
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     id: "conduit-compose",
     title: "Conduit Compose",
     description:
-      "Automated Conduit deployment with CI/CD, containerization and security hardening.",
+      "Docker Compose-based deployment of the Conduit application. Technically functional, legally questionable, and a strong reminder that DevSecOps does not end at `docker compose up` — especially when privacy regulations exist.",
     image: "/img/portfolio/projects/conduit-deploy.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/conduit-compose",
