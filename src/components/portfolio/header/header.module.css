@@ -107,8 +107,10 @@
 
   .container {
     justify-content: flex-end;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-left: 26px;
+    padding-right: 39px;
   }
 
   .mobileMenu {
