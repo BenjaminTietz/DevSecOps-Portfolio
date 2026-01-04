@@ -1,7 +1,7 @@
 .section {
-  background-color: #266ad9;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #266ad9;
 }
 
 .container {
@@ -11,7 +11,7 @@
   gap: 80px;
   padding-left: 110px;
   padding-right: 106px;
-  background-color: #262e34;
+  background-color: #266ad9;
 }
 
 .projectList {
@@ -67,7 +67,7 @@
 
 .card {
   flex: 1;
-  background-color: #344054;
+  background-color: #2f4563;
   border-radius: 24px;
   padding: 40px;
   color: #ffffff;
@@ -172,10 +172,13 @@
   line-height: 120%;
   font-family: var(--font-quicksand);
   transition: background-color 0.25s ease;
+  white-space: nowrap;
 }
 
 .primaryBtn:hover {
   text-decoration: none;
+  color: #ffffff;
+  background-color: #3b5acc;
 }
 
 .secondaryBtn {
@@ -195,6 +198,7 @@
 .secondaryBtn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
+  color: #ffffff;
 }
 
 @keyframes fadeIn {
@@ -334,15 +338,17 @@
   .primaryBtn {
     font-size: 16px;
     height: 47px;
+    max-width: 152px;
     background-color: #ffffff;
     color: #266ad9;
     font-style: semi-bold;
     text-align: center;
+    padding: 0px 8px;
   }
 
   .secondaryBtn {
     font-size: 16px;
-    width: 1208px;
+    width: 120px;
     height: 47px;
     background-color: transparent;
     color: #ffffff;
@@ -358,6 +364,8 @@
 
   .actions {
     margin-top: 16px;
+    justify-content: center;
+    align-items: center;
   }
 
   .desktopOnly {

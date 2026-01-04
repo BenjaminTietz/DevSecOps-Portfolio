@@ -17,7 +17,6 @@
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
-  font-size: bold;
   color: #ffffff;
   margin-bottom: 64px;
   font-family: var(--font-quicksand);
@@ -25,6 +24,7 @@
 
 .subTitle {
   display: none;
+  color: #ffffff;
 }
 
 .grid {
@@ -93,7 +93,7 @@
   line-height: 120%;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .card:hover .front {
@@ -120,8 +120,8 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -131,7 +131,7 @@
     line-height: 100%;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 
   .subTitle {
@@ -162,7 +162,7 @@
     opacity: 1;
     pointer-events: auto;
     background: transparent;
-    padding: 16px 0 0 0;
+    padding: 8px 0 0 0;
   }
 
   .card {
@@ -171,8 +171,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-
-    padding: 24px;
+    padding: 8px;
     height: auto;
   }
 
