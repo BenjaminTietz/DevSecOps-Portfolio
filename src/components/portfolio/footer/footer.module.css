@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2a3238;
+  background-color: #262e34;
   padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
@@ -44,8 +44,28 @@
   text-decoration: underline;
 }
 
+.content a,
+p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  font-family: var(--font-quicksand);
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
 @media (max-width: 768px) {
   .scrollTop {
     height: 80px;
+  }
+
+  .content {
+    gap: 4px;
+  }
+  .scrollTop {
+    width: 40px;
+    height: 73px;
+    font-size: 20px;
   }
 }
