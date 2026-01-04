@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "Baby Tools Shop",
     description:
       "A legacy Django fullstack application — partially broken, unexpectedly documented in Turkish, and containerized as-is. A real-world lesson in working with inherited software you didn’t choose.",
-    image: "/img/portfolio/projects/baby-tools-shop.png",
+    image: "/img/portfolio/projects/babyshop.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/baby-tools-shop",
     githubUrl: "https://github.com/BenjaminTietz/baby-tools-shop",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "WordPress Hosten",
     description:
       "Classic WordPress deployment using Docker and MariaDB. Straightforward, predictable, and a reminder that not every DevSecOps task needs to be dramatic to be functional.",
-    image: "/img/portfolio/projects/wordpress-hosten.png",
+    image: "/img/portfolio/projects/wordpress.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/wordpress",
     githubUrl:
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     title: "V-Server Setup",
     description:
       "Initial V-Server provisioning and container deployment. Also known as the project that later received an external security notification due to an exposed database port — a far more effective review than any checklist.",
-    image: "/img/portfolio/projects/v-server-setup.png",
+    image: "/img/portfolio/projects/v-server.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/v-server-setup/",
     githubUrl: "https://github.com/BenjaminTietz/v-server-setup",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     title: "Conduit Compose",
     description:
       "Docker Compose-based deployment of the Conduit application. Technically functional, legally questionable, and a strong reminder that DevSecOps does not end at `docker compose up` — especially when privacy regulations exist.",
-    image: "/img/portfolio/projects/conduit-deploy.png",
+    image: "/img/portfolio/projects/conduit-container.png",
     tech: ["yaml", "shell", "security", "container"],
     docUrl: "docs/projects/conduit-compose",
     githubUrl: "https://github.com/BenjaminTietz/conduit-compose",
