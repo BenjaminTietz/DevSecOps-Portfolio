@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: #4a6fdc;
+  background-color: #266ad9;
   position: relative;
   z-index: 100;
 }
@@ -27,10 +27,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 6px;
-
   width: 32px;
   height: 32px;
-
   background: none;
   border: none;
   cursor: pointer;
@@ -48,7 +46,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 340px;
+  height: 400px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -63,12 +61,17 @@
 }
 
 .mobileMenu a {
-  color: #4a6fdc;
+  color: #266ad9;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   padding: 12px 0;
+  font-family: var(--font-quicksand);
+}
+
+.mobileMenu a:first-child {
+  margin-top: 40px;
 }
 
 .mobileMenu a:hover {
@@ -85,11 +88,10 @@
   position: absolute;
   top: 24px;
   right: 24px;
-
   font-size: 32px;
   background: none;
   border: none;
-  color: #4a6fdc;
+  color: #266ad9;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -103,6 +105,12 @@
 
   .mobileMenu {
     display: flex;
+  }
+
+  .mobileMenu a {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120%;
   }
 
   .container {

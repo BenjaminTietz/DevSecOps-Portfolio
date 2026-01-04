@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  background-color: #4a6fdc;
+  background-color: #266ad9;
 }
 
 .greeting {
@@ -103,6 +103,12 @@
 
   .textBottom {
     order: 3;
+  }
+
+  .cta {
+    width: fit-content;
+    height: 47px;
+    font-size: 16px;
   }
 
   .name {

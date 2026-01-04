@@ -1,5 +1,5 @@
 .section {
-  background-color: #2a3238;
+  background-color: #262e34;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -84,10 +84,35 @@
   .container {
     flex-direction: column;
     padding: 0 24px;
+    gap: 40px;
   }
 
   .left,
   .right {
     max-width: 100%;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .contactItem a {
+    font-size: 16px;
+  }
+
+  .contactItem img {
+    width: 32px;
+    height: 32px;
   }
 }
