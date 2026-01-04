@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .container {
     flex-direction: column;
     padding: 0 24px;

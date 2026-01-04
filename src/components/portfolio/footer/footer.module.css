@@ -68,4 +68,8 @@ p {
     height: 73px;
     font-size: 20px;
   }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
