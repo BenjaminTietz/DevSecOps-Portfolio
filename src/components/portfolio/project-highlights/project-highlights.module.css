@@ -1,18 +1,17 @@
 .section {
-  background-color: #266ad9;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #266ad9;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-
   display: flex;
   gap: 80px;
-
   padding-left: 110px;
   padding-right: 106px;
+  background-color: #266ad9;
 }
 
 .projectList {
@@ -68,7 +67,7 @@
 
 .card {
   flex: 1;
-  background-color: #344054;
+  background-color: #2f4563;
   border-radius: 24px;
   padding: 40px;
   color: #ffffff;
@@ -173,10 +172,13 @@
   line-height: 120%;
   font-family: var(--font-quicksand);
   transition: background-color 0.25s ease;
+  white-space: nowrap;
 }
 
 .primaryBtn:hover {
   text-decoration: none;
+  color: #ffffff;
+  background-color: #3b5acc;
 }
 
 .secondaryBtn {
@@ -196,6 +198,7 @@
 .secondaryBtn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
+  color: #ffffff;
 }
 
 @keyframes fadeIn {
@@ -209,10 +212,63 @@
   }
 }
 
+.desktopOnly {
+  display: block;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.mobileMore {
+  background-color: #262e34;
+  padding: 48px 24px 56px;
+  text-align: center;
+  margin-top: -48px;
+  margin-bottom: -48px;
+}
+
+.mobileMoreText {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  font-family: var(--font-quicksand);
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.mobileMoreBtn {
+  display: inline-block;
+  background-color: #266ad9;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-quicksand);
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
-  .card {
-    padding: unset;
+  .section {
+    padding-top: 0;
+    padding-bottom: 40px;
+    background-color: transparent;
   }
+
+  .container {
+    gap: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .card {
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+  }
+
   .container {
     flex-direction: column;
     padding-left: 24px;
@@ -235,6 +291,8 @@
 
   .projectList {
     width: 100%;
+    background-color: #266ad9;
+    padding: 8px 24px;
   }
 
   .cardContent {
@@ -246,7 +304,8 @@
     height: auto;
   }
   .card {
-    background-color: transparent;
+    background-color: #266ad9;
+    border-radius: unset;
   }
 
   .card:hover {
@@ -257,13 +316,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
   }
 
   .cardHeader h3 {
     font-size: 36px;
     line-height: 120%;
     font-weight: 600;
+  }
+
+  .cardContent {
+    gap: 16px;
   }
 
   .cardContent p {
@@ -275,15 +338,17 @@
   .primaryBtn {
     font-size: 16px;
     height: 47px;
+    max-width: 152px;
     background-color: #ffffff;
     color: #266ad9;
     font-style: semi-bold;
     text-align: center;
+    padding: 0px 8px;
   }
 
   .secondaryBtn {
     font-size: 16px;
-    width: 1208px;
+    width: 120px;
     height: 47px;
     background-color: transparent;
     color: #ffffff;
@@ -295,5 +360,21 @@
     background-color: #ffffff33;
     color: #ffffff;
     font-weight: 600;
+  }
+
+  .actions {
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
   }
 }
