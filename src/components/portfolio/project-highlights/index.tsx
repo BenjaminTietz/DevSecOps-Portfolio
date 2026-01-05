@@ -31,6 +31,7 @@ const ProjectHighlights: React.FC = () => {
             ↳ see more projects
           </a>
         </div>
+
         {/* DESKTOP: SINGLE ACTIVE CARD */}
         <div className={styles.desktopOnly}>
           <div className={styles.card}>
@@ -54,6 +55,7 @@ const ProjectHighlights: React.FC = () => {
                 })}
               </div>
             </div>
+
             <div className={styles.cardContent}>
               <img
                 src={useBaseUrl(activeProject.image)}
@@ -62,6 +64,7 @@ const ProjectHighlights: React.FC = () => {
               />
               <p>{activeProject.description}</p>
             </div>
+
             <div className={styles.actions}>
               <a className={styles.primaryBtn} href={activeProject.docUrl}>
                 Documentation
@@ -72,7 +75,8 @@ const ProjectHighlights: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* MOBILE: 3 PROJECT CARDS */}
+
+        {/* MOBILE: PROJECT CARDS */}
         <div className={styles.mobileOnly}>
           {projects.slice(0, 3).map((project) => (
             <div key={project.id} className={styles.card}>
@@ -104,6 +108,7 @@ const ProjectHighlights: React.FC = () => {
                   })}
                 </div>
               </div>
+
               <div className={styles.cardContent}>
                 <img
                   src={useBaseUrl(project.image)}
@@ -123,21 +128,22 @@ const ProjectHighlights: React.FC = () => {
               </div>
             </div>
           ))}
-          {/* MOBILE: SEE MORE SECTION (NUR EINMAL!) */}
+
+          {/* MOBILE: SEE MORE SECTION */}
           <div className={styles.mobileMore}>
             <p className={styles.mobileMoreText}>
-              Most of these projects were “challenging” — not because they were
-              complex, but because they were based on outdated, broken default
-              configurations.
+              These projects offered a wide range of practical challenges and
+              learning opportunities.
               <br />
               <br />
-              The real task was not building something new, but making something
-              old, misconfigured, and half-documented work at all.
+              They provided valuable experience in working with existing
+              applications, understanding real-world configurations, and
+              improving systems through structured deployment and security-aware
+              practices.
               <br />
               <br />
-              If you’re curious how that turned out, feel free to explore the
-              projects. If not — that’s okay too. Some lessons are expensive
-              enough already.
+              If you’re interested in learning more about the individual setups
+              and solutions, feel free to explore the project documentation.
             </p>
             <a
               href={useBaseUrl("/docs/projects/overview/")}
