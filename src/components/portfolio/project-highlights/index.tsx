@@ -85,11 +85,19 @@ const ProjectHighlights: React.FC = () => {
 
                     return (
                       <span key={techKey} className={styles.tag}>
-                        <img
-                          src={useBaseUrl(tech.icon)}
-                          alt={tech.label}
-                          className={styles.tagIcon}
-                        />
+                        <picture>
+                          {tech.mobileIcon && (
+                            <source
+                              media="(max-width: 768px)"
+                              srcSet={useBaseUrl(tech.mobileIcon)}
+                            />
+                          )}
+                          <img
+                            src={useBaseUrl(tech.icon)}
+                            alt={tech.label}
+                            className={styles.tagIcon}
+                          />
+                        </picture>
                         {tech.label}
                       </span>
                     );
