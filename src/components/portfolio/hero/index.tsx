@@ -10,41 +10,40 @@ const Hero: React.FC = () => {
         <div className={styles.textColumn}>
           <div className={styles.textTop}>
             <span className={styles.greeting}>Hey there. 👋 I am</span>
-            <h1 className={styles.name}>The Wizard of --noinput</h1>
+            <h1 className={styles.name}>Benjamin Tietz</h1>
 
             <h2 className={styles.role}>
               DevSecOps Engineer{" "}
               <span style={{ fontWeight: 400 }}>
-                (He Believed. Django Didn’t.)
+                with a passion for secure, real-world systems
               </span>
             </h2>
           </div>
+
           <div className={styles.mobileWrapper}>
             <div className={styles.textBottom}>
               <p className={styles.description}>
-                Welcome to a world where Dockerfiles are reviewed, Python
-                versions are sometimes… Wayne, and superusers are summoned with
-                commands that may or may not exist.
+                During my DevSecOps journey, I had the opportunity to work on a
+                variety of practical projects that closely reflect real-world
+                scenarios.
                 <br />
                 <br />
-                I build real-world systems: an Angular frontend, a Django
-                backend, and a PostgreSQL database — once officially approved by
-                a mentor in a DevSecOps course.
+                I built and deployed full-stack systems combining an Angular
+                frontend, a Django backend, and a PostgreSQL database, while
+                learning how crucial secure defaults, clean configurations, and
+                intentional infrastructure decisions really are.
                 <br />
                 <br />
-                A few weeks later, reality performed its own security review. An
-                exposed database port was discovered, and my V-Server was
-                flagged by the German BSI.
+                The course projects helped me develop a strong awareness for
+                security, automation, and operational responsibility. Each
+                challenge was a valuable learning experience that sharpened my
+                understanding of DevSecOps beyond theory.
                 <br />
                 <br />
-                Lesson learned:
-                <strong>
-                  {" "}
-                  DevSecOps is not about passing reviews — it’s about surviving
-                  reality.
-                </strong>
-                Today, my ports are closed, my base images are intentional, and
-                my superusers are created without magic flags.
+                Today, I focus on building systems that are not only functional,
+                but also secure, maintainable, and production-ready — from base
+                images and containerization to access control and deployment
+                workflows.
               </p>
 
               <button
@@ -53,15 +52,15 @@ const Hero: React.FC = () => {
                 onClick={() => (window.location.href = "#contact")}
                 className={styles.cta}
               >
-                Contact me (no open ports)
+                Contact me
               </button>
             </div>
 
             {/* RIGHT SIDE */}
             <div className={styles.imageWrapper}>
               <img
-                src={useBaseUrl("/img/portfolio/ben.png")}
-                alt="Python Wayne DevSecOps Engineer"
+                src={useBaseUrl("/img/portfolio/benjamin.webp")}
+                alt="Benjamin Tietz DevSecOps Engineer"
                 className={styles.image}
               />
             </div>

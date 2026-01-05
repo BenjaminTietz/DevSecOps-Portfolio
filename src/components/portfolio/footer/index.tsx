@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
       </button>
 
       <div className={styles.content}>
-        <p className={styles.copy}>© The Wizard of --noinput 2025</p>
+        <p className={styles.copy}>© Benjamin Tietz 2026</p>
         <a href={useBaseUrl("/legal-notice")}>Legal notice</a>
       </div>
     </footer>

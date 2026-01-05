@@ -11,20 +11,22 @@ const Contact: React.FC = () => {
           <h2 className={styles.title}>Contact me</h2>
 
           <p className={styles.text}>
-            If you made it this far, congratulations — you survived the
-            portfolio without exposing any ports.
+            Thank you for taking the time to explore my portfolio and projects.
+            I’m always happy to connect and exchange ideas.
           </p>
 
           <ul className={styles.list}>
             <li>
-              Feel free to reach out with real job offers (not course upsells)
+              Feel free to reach out with job offers or collaboration ideas
             </li>
-            <li>Tell me what problem you actually want to solve</li>
+            <li>Tell me about the challenges or goals you’re working on</li>
             <li>
-              Let’s talk about systems that work in production — not in slides
+              I’m especially interested in building reliable and secure systems
+              for real-world use
             </li>
             <li>
-              Remote? Hybrid? On-site? As long as security scans stay green
+              Open to remote, hybrid, or on-site roles depending on the project
+              and setup
             </li>
           </ul>
         </div>
@@ -32,13 +34,13 @@ const Contact: React.FC = () => {
         {/* RIGHT */}
         <div className={styles.right}>
           <p className={styles.subtitle}>
-            I’ve already invested heavily in expensive lessons — now I prefer
-            paid work.
+            I’m looking forward to meaningful conversations and new
+            opportunities.
           </p>
 
           <div className={styles.contactItem}>
             <img src={useBaseUrl("/img/portfolio/icons/mail.png")} alt="Mail" />
-            <a href="mailto:felix.wallke@gmail.com">security.wayne@gmail.com</a>
+            <a href="mailto:felix.wallke@gmail.com">felix.wallke@gmail.com</a>
           </div>
 
           <div className={styles.contactItem}>
@@ -47,7 +49,7 @@ const Contact: React.FC = () => {
               alt="LinkedIn"
             />
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              LinkedIn (mentor reviews not included)
+              LinkedIn profile
             </a>
           </div>
         </div>
