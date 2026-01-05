@@ -174,8 +174,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-    padding: 8px;
-    min-height: 195px;
+    padding: 0 8px;
+    min-height: 160px;
     height: auto;
   }
 
