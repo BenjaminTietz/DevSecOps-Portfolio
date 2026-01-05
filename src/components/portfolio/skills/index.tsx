@@ -66,7 +66,7 @@ const Skills: React.FC = () => {
   );
 
   const changePage = (nextPage: number, dir: "next" | "prev") => {
-    if (nextPage < 0 || nextPage >= totalPages) return;
+    if (nextPage < 0 || nextPage >= totalPages || nextPage === page) return;
     setDirection(dir);
     setPage(nextPage);
   };
@@ -95,6 +95,7 @@ const Skills: React.FC = () => {
     <section className={styles.skills} id="skills">
       <div className={`layout-container ${styles.container}`}>
         <h2 className={styles.title}>My skills</h2>
+
         {/* DESKTOP GRID */}
         <div className={styles.grid}>
           {skills.map((skill) => (
@@ -138,14 +139,29 @@ const Skills: React.FC = () => {
                   />
                   <span className={styles.label}>{skill.label}</span>
                 </div>
+
                 <div className={styles.back}>
-                  <ul>
+                  <ul className={styles.backList}>
                     {skill.details.map((d) => (
                       <li key={d}>{d}</li>
                     ))}
                   </ul>
                 </div>
               </div>
+            ))}
+          </div>
+
+          {/* DOTS */}
+          <div className={styles.dots}>
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                className={`${styles.dot} ${
+                  i === page ? styles.activeDot : ""
+                }`}
+                onClick={() => changePage(i, i > page ? "next" : "prev")}
+                aria-label={`Go to skills page ${i + 1}`}
+              />
             ))}
           </div>
         </div>
