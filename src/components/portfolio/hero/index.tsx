@@ -55,16 +55,15 @@ const Hero: React.FC = () => {
                 Contact me
               </button>
             </div>
-
-            {/* RIGHT SIDE */}
-            <div className={styles.imageWrapper}>
-              <img
-                src={useBaseUrl("/img/portfolio/benjamin.webp")}
-                alt="Benjamin Tietz DevSecOps Engineer"
-                className={styles.image}
-              />
-            </div>
           </div>
+        </div>
+        {/* RIGHT SIDE */}
+        <div className={styles.imageWrapper}>
+          <img
+            src={useBaseUrl("/img/portfolio/benjamin.webp")}
+            alt="Benjamin Tietz DevSecOps Engineer"
+            className={styles.image}
+          />
         </div>
       </div>
     </section>

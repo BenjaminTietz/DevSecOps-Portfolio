@@ -1,9 +1,9 @@
 .footer {
-  background-color: #262e34;
+  background-color: var(--color-bg);
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-text);
   position: relative;
 }
 
@@ -11,11 +11,11 @@
   width: 56px;
   height: 96px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid var(--color-text);
   border-radius: 28px;
 
   background: transparent;
-  color: #ffffff;
+  color: var(--color-text);
 
   font-size: 24px;
   cursor: pointer;
@@ -40,13 +40,13 @@
 
 .legal {
   font-size: 14px;
-  color: #ffffff;
+  color: var(--color-text);
   text-decoration: underline;
 }
 
 .content a,
 p {
-  color: #ffffff;
+  color: var(--color-text);
   font-size: 14px;
   line-height: 120%;
   font-weight: 400;
