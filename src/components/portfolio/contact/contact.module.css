@@ -1,18 +1,13 @@
 .section {
   background-color: #262e34;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   gap: 80px;
-
-  padding: 0 110px;
   color: #ffffff;
 }
 

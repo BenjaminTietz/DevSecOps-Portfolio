@@ -7,12 +7,12 @@ export interface TechMeta {
 export const TECH_ICONS: Record<string, TechMeta> = {
   yaml: {
     label: "YAML",
-    icon: "/img/portfolio/icons/yaml.png",
+    icon: "/img/portfolio/icons/yaml_mobile.png",
     mobileIcon: "/img/portfolio/icons/yaml_mobile.png",
   },
   shell: {
     label: "Shell scripting",
-    icon: "/img/portfolio/icons/shell_scripting.png",
+    icon: "/img/portfolio/icons/shell_scripting_mobile.png",
     mobileIcon: "/img/portfolio/icons/shell_scripting_mobile.png",
   },
   security: {
