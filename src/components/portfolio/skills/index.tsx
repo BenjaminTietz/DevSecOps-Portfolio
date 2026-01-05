@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./skills.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
@@ -10,7 +10,7 @@ const skills = [
       "User-friendly navigation menus",
       "Responsive web design",
       "Contact forms and login pages",
-      "Transitions, animations and hover effect",
+      "Transitions, animations and hover effects",
     ],
   },
   {
@@ -67,16 +67,38 @@ const skills = [
   },
 ];
 
+const ITEMS_PER_PAGE = 3;
+
 const Skills: React.FC = () => {
+  const [page, setPage] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const changePage = (next: number) => {
+    if (next === page) return;
+    setAnimating(true);
+    setTimeout(() => {
+      setPage(next);
+      setAnimating(false);
+    }, 300);
+  };
+
+  const totalPages = Math.ceil(skills.length / ITEMS_PER_PAGE);
+
+  const visibleSkills = skills.slice(
+    page * ITEMS_PER_PAGE,
+    page * ITEMS_PER_PAGE + ITEMS_PER_PAGE
+  );
+
   return (
     <section className={styles.skills} id="skills">
       <div className={`layout-container ${styles.container}`}>
         <h2 className={styles.title}>My skills</h2>
         <div className={styles.subTitle}>Where I applied my skills</div>
+
+        {/* DESKTOP GRID */}
         <div className={styles.grid}>
           {skills.map((skill) => (
             <div key={skill.label} className={styles.card}>
-              {/* Default view */}
               <div className={styles.front}>
                 <img
                   src={useBaseUrl(skill.icon)}
@@ -86,9 +108,8 @@ const Skills: React.FC = () => {
                 <span className={styles.label}>{skill.label}</span>
               </div>
 
-              {/* Hover view */}
               <div className={styles.back}>
-                <h3 className={styles.backTitle}>How I used this skills</h3>
+                <h3 className={styles.backTitle}>How I used these skills</h3>
                 <ul className={styles.backList}>
                   {skill.details.map((item) => (
                     <li key={item}>{item}</li>
@@ -97,6 +118,49 @@ const Skills: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* MOBILE CAROUSEL */}
+        <div className={styles.carousel}>
+          <div
+            className={`${styles.carouselTrack} ${
+              animating ? styles.fadeOut : styles.fadeIn
+            }`}
+          >
+            {visibleSkills.map((skill) => (
+              <div key={skill.label} className={styles.card}>
+                <div className={styles.front}>
+                  <img
+                    src={useBaseUrl(skill.icon)}
+                    alt={skill.label}
+                    className={styles.icon}
+                  />
+                  <span className={styles.label}>{skill.label}</span>
+                </div>
+
+                <div className={styles.back}>
+                  <ul className={styles.backList}>
+                    {skill.details.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.dots}>
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                className={`${styles.dot} ${
+                  i === page ? styles.activeDot : ""
+                }`}
+                onClick={() => changePage(i)}
+                aria-label={`Go to skills page ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
