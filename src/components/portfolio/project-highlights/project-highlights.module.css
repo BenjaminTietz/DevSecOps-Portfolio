@@ -1,16 +1,15 @@
 .section {
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #266ad9;
 }
 
+:global(.layout-container) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   gap: 40px;
-  padding-left: 110px;
-  padding-right: 106px;
   background-color: #266ad9;
 }
 
@@ -25,18 +24,14 @@
   font-weight: 700;
   font-family: var(--font-quicksand);
   color: #ffffff;
-  margin-bottom: 40px;
-  margin: 0 auto;
   box-sizing: border-box;
   text-align: left;
-  padding-left: 110px;
-  padding-right: 106px;
-  padding-bottom: 40px;
 }
 
 .title h2 {
   margin-block-start: 0;
   margin-block-end: 0;
+  text-align: left;
 }
 
 .list {
@@ -264,6 +259,9 @@
 }
 
 @media (max-width: 1280px) {
+  .container {
+    gap: 8px;
+  }
   .cardContent {
     flex-direction: column;
     align-items: center;
