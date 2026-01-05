@@ -105,6 +105,10 @@
   pointer-events: auto;
 }
 
+.carousel {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .backTitle {
     font-size: 16px;
@@ -202,5 +206,51 @@
   }
   .backList {
     width: 100%;
+  }
+
+  .grid {
+    display: none;
+  }
+
+  .carousel {
+    display: block;
+  }
+
+  .carouselTrack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fadeOut {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff55;
+    border: none;
+    cursor: pointer;
+  }
+
+  .activeDot {
+    background-color: #ffffff;
+    width: 24px;
+    border-radius: 8px;
   }
 }
