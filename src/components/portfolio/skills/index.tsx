@@ -68,19 +68,13 @@ const skills = [
 ];
 
 const ITEMS_PER_PAGE = 3;
+const SWIPE_THRESHOLD = 50;
 
 const Skills: React.FC = () => {
   const [page, setPage] = useState(0);
   const [animating, setAnimating] = useState(false);
-
-  const changePage = (next: number) => {
-    if (next === page) return;
-    setAnimating(true);
-    setTimeout(() => {
-      setPage(next);
-      setAnimating(false);
-    }, 300);
-  };
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
   const totalPages = Math.ceil(skills.length / ITEMS_PER_PAGE);
 
@@ -88,6 +82,41 @@ const Skills: React.FC = () => {
     page * ITEMS_PER_PAGE,
     page * ITEMS_PER_PAGE + ITEMS_PER_PAGE
   );
+
+  const changePage = (next: number) => {
+    if (next < 0 || next >= totalPages || next === page) return;
+
+    setAnimating(true);
+    setTimeout(() => {
+      setPage(next);
+      setAnimating(false);
+    }, 300);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > SWIPE_THRESHOLD) {
+      if (diff > 0) {
+        changePage(page + 1); // swipe left
+      } else {
+        changePage(page - 1); // swipe right
+      }
+    }
+
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
 
   return (
     <section className={styles.skills} id="skills">
@@ -126,6 +155,9 @@ const Skills: React.FC = () => {
             className={`${styles.carouselTrack} ${
               animating ? styles.fadeOut : styles.fadeIn
             }`}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {visibleSkills.map((skill) => (
               <div key={skill.label} className={styles.card}>
@@ -149,6 +181,7 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
+          {/* DOTS */}
           <div className={styles.dots}>
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
