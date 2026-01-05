@@ -26,6 +26,7 @@
   font-weight: 700;
   font-family: var(--font-quicksand);
   margin-bottom: 24px;
+  white-space: nowrap;
 }
 
 .text {
