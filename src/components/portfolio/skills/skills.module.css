@@ -172,6 +172,7 @@
     justify-content: flex-start;
     gap: 16px;
     padding: 8px;
+    min-height: 155px;
     height: auto;
   }
 

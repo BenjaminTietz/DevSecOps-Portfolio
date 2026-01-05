@@ -8,7 +8,7 @@
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  gap: 80px;
+  gap: 40px;
   padding-left: 110px;
   padding-right: 106px;
   background-color: #266ad9;
@@ -19,12 +19,24 @@
 }
 
 .title {
+  max-width: 1440px;
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
   font-family: var(--font-quicksand);
   color: #ffffff;
   margin-bottom: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 110px;
+  padding-right: 106px;
+  padding-bottom: 40px;
+}
+
+.title h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .list {
@@ -109,7 +121,7 @@
 }
 
 .tags {
-  height: 44px;
+  height: 96px;
   width: fit-content;
   font-size: 14px;
   line-height: 120%;
@@ -214,6 +226,7 @@
 
 .desktopOnly {
   display: block;
+  width: 65%;
 }
 
 .mobileOnly {
@@ -248,6 +261,29 @@
   font-weight: 600;
   font-family: var(--font-quicksand);
   text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .cardHeader {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+  .tags {
+    height: auto;
+  }
+  .actions {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -341,9 +377,11 @@
     max-width: 152px;
     background-color: #ffffff;
     color: #266ad9;
-    font-style: semi-bold;
     text-align: center;
     padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .secondaryBtn {
@@ -364,7 +402,6 @@
 
   .actions {
     margin-top: 16px;
-    justify-content: center;
     align-items: center;
   }
 
@@ -376,5 +413,11 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    background-color: #262e34;
+  }
+
+  .title {
+    padding: 24px;
+    background-color: #266ad9;
   }
 }
