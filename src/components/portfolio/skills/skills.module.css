@@ -109,6 +109,11 @@
   display: none;
 }
 
+.carouselTrack {
+  touch-action: pan-y;
+  user-select: none;
+}
+
 @media (max-width: 1024px) {
   .backTitle {
     font-size: 16px;
@@ -145,12 +150,6 @@
     line-height: 100%;
     margin-bottom: 40px;
     font-family: var(--font-quicksand);
-  }
-
-  .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
   .front {
@@ -221,7 +220,9 @@
     flex-direction: column;
     gap: 20px;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    will-change: transform, opacity;
   }
+
   .fadeIn {
     opacity: 1;
     transform: translateY(0);
