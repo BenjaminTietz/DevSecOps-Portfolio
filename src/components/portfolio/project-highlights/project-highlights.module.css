@@ -1,16 +1,22 @@
 .section {
-  background-color: #266ad9;
-}
-
-:global(.layout-container) {
-  flex-direction: column;
-  align-items: flex-start;
+  background-color: var(--color-primary);
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--color-primary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   gap: 40px;
-  background-color: #266ad9;
 }
 
 .projectList {
@@ -19,11 +25,12 @@
 
 .title {
   max-width: 1440px;
+  width: 100%;
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
   font-family: var(--font-quicksand);
-  color: #ffffff;
+  color: var(--color-text);
   box-sizing: border-box;
   text-align: left;
 }
@@ -37,7 +44,7 @@
 .list {
   list-style: decimal;
   padding-left: 20px;
-  color: #ffffff;
+  color: var(--color-text);
   cursor: pointer;
   transition: opacity 0.2s;
 }
@@ -68,22 +75,20 @@
 .more {
   display: inline-block;
   margin-top: 24px;
-  color: #ffffff;
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .card {
   flex: 1;
-  background-color: #2f4563;
   border-radius: 24px;
-  padding: 40px;
-  color: #ffffff;
+  color: var(--color-text);
   height: fit-content;
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cardHeader,
@@ -100,9 +105,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 32px;
   margin-bottom: 32px;
   height: fit-content;
+  gap: 16px;
 }
 
 .cardHeader h3 {
@@ -113,10 +118,12 @@
   line-height: 120%;
   margin-block-start: 0;
   margin-block-end: 0;
+  width: 50%;
+  white-space: nowrap;
 }
 
 .tags {
-  height: 96px;
+  height: 44px;
   width: fit-content;
   font-size: 14px;
   line-height: 120%;
@@ -125,17 +132,17 @@
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
+  width: 50%;
 }
 
 .tag {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background-color: #ffffff;
-  color: #344054;
+  gap: 4px;
+  background-color: var(--color-text);
+  color: var(--color-surface);
   padding: 6px;
-  border-radius: 14px;
-  max-width: 120px;
+  border-radius: 10px;
 }
 
 .tagIcon {
@@ -145,7 +152,11 @@
 
 .cardContent {
   display: flex;
-  gap: 32px;
+  gap: 16px;
+}
+
+.cardContent img {
+  width: 50%;
 }
 
 .image {
@@ -160,18 +171,18 @@
   line-height: 125%;
   font-weight: 400;
   font-family: var(--font-quicksand);
+  width: 50%;
 }
 
 .actions {
-  margin-top: 32px;
   display: flex;
   justify-content: flex-end;
   gap: 16px;
 }
 
 .primaryBtn {
-  background-color: #4a6fdc;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   padding: 12px 28px;
   border-radius: 24px;
   font-size: 20px;
@@ -184,13 +195,13 @@
 
 .primaryBtn:hover {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #3b5acc;
+  color: var(--color-text);
+  background: var(--color-primary-bright);
 }
 
 .secondaryBtn {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
   padding: 12px 28px;
   border-radius: 24px;
   text-decoration: none;
@@ -203,9 +214,9 @@
 }
 
 .secondaryBtn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--color-text-soft);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 @keyframes fadeIn {
@@ -221,7 +232,16 @@
 
 .desktopOnly {
   display: block;
-  width: 65%;
+  flex: 1;
+  min-width: 0;
+  min-height: 384px;
+  background-color: var(--color-surface-alt) !important;
+  border-radius: 30px;
+  padding: 32px 24px;
+}
+
+.desktopOnly:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .mobileOnly {
@@ -229,7 +249,7 @@
 }
 
 .mobileMore {
-  background-color: #262e34;
+  background-color: var(--color-bg);
   padding: 48px 24px 56px;
   text-align: center;
   margin-top: -48px;
@@ -237,7 +257,7 @@
 }
 
 .mobileMoreText {
-  color: #ffffff;
+  color: var(--color-text);
   font-size: 16px;
   line-height: 130%;
   font-weight: 400;
@@ -248,14 +268,20 @@
 
 .mobileMoreBtn {
   display: inline-block;
-  background-color: #266ad9;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   padding: 16px 40px;
   border-radius: 32px;
   font-size: 16px;
   font-weight: 600;
   font-family: var(--font-quicksand);
   text-decoration: none;
+}
+
+.mobileMoreBtn:hover {
+  text-decoration: none;
+  color: var(--color-text);
+  background: var(--color-primary-bright);
 }
 
 @media (max-width: 1280px) {
@@ -265,6 +291,24 @@
   .cardContent {
     flex-direction: column;
     align-items: center;
+  }
+  .cardHeader h3 {
+    font-size: 32px;
+    width: 100%;
+    white-space: normal;
+  }
+  .tags {
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .cardContent p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .cardContent img {
+    width: 100%;
   }
   .image {
     width: 100%;
@@ -287,32 +331,40 @@
 @media (max-width: 768px) {
   .section {
     padding-top: 0;
-    padding-bottom: 40px;
-    background-color: transparent;
+  }
+
+  .wrapper {
+    flex-direction: column !important;
+    gap: 0 !important;
   }
 
   .container {
+    flex-direction: column;
     gap: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    width: 100%;
+    padding-inline: 0;
+    box-sizing: border-box;
   }
 
   .card {
     padding-left: 24px;
     padding-right: 24px;
+    box-sizing: border-box;
     display: block;
+    border-radius: unset;
   }
 
-  .container {
-    flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
+  .card:hover {
+    box-shadow: none;
   }
 
   .title {
     font-size: 48px;
     margin-block-start: 0;
     margin-block-end: 0;
+    width: 100%;
+    padding-inline: 24px;
+    box-sizing: border-box;
   }
 
   .list {
@@ -325,7 +377,7 @@
 
   .projectList {
     width: 100%;
-    background-color: #266ad9;
+    background-color: var(--color-primary);
     padding: 8px 24px;
   }
 
@@ -336,14 +388,6 @@
   .image {
     width: 100%;
     height: auto;
-  }
-  .card {
-    background-color: #266ad9;
-    border-radius: unset;
-  }
-
-  .card:hover {
-    box-shadow: none;
   }
 
   .cardHeader {
@@ -357,24 +401,31 @@
     font-size: 36px;
     line-height: 120%;
     font-weight: 600;
+    padding-bottom: 16px;
   }
 
   .cardContent {
     gap: 16px;
+    width: 100%;
+    padding-top: 16px;
   }
 
+  .cardContent img {
+    width: 100%;
+  }
   .cardContent p {
     font-size: 18px;
     font-weight: 500;
     line-height: 125%;
+    width: 100%;
   }
 
   .primaryBtn {
     font-size: 16px;
     height: 47px;
     max-width: 152px;
-    background-color: #ffffff;
-    color: #266ad9;
+    background: var(--color-text);
+    color: var(--color-primary);
     text-align: center;
     padding: 0px 8px;
     display: flex;
@@ -387,15 +438,19 @@
     width: 120px;
     height: 47px;
     background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
     text-align: center;
   }
 
   .tags span {
-    background-color: #ffffff33;
-    color: #ffffff;
+    background-color: var(--color-text-soft);
+    color: var(--color-text);
     font-weight: 600;
+  }
+
+  .tags {
+    width: 100%;
   }
 
   .actions {
@@ -411,11 +466,11 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    background-color: #262e34;
+    background: var(--color-primary) !important;
   }
 
   .title {
     padding: 24px;
-    background-color: #266ad9;
+    background-color: var(--color-primary);
   }
 }

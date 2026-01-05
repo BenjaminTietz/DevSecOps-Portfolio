@@ -1,6 +1,12 @@
 .skills {
   width: 100%;
-  background-color: #262e34;
+  background-color: var(--color-bg);
+}
+
+.layout-container {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  background: var(--color-primary-soft) !important;
 }
 
 .container {
@@ -13,14 +19,14 @@
   font-size: 64px;
   line-height: 120%;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text);
   margin-bottom: 64px;
   font-family: var(--font-quicksand);
 }
 
 .subTitle {
   display: none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .grid {
@@ -31,7 +37,8 @@
 
 .card {
   position: relative;
-  background-color: #34424d;
+  background: var(--color-primary-soft);
+
   border-radius: 20px;
   height: 180px;
   overflow: hidden;
@@ -56,7 +63,7 @@
   font-size: 18px;
   line-height: 120%;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color-text);
   font-family: var(--font-reddit);
   text-align: center;
 }
@@ -64,7 +71,7 @@
 .back {
   position: absolute;
   inset: 0;
-  background-color: #5b7192;
+  background-color: var(--color-surface-alt);
   padding: 24px;
   opacity: 0;
   pointer-events: none;
@@ -75,7 +82,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
-  color: #ffffff;
+  color: var(--color-text);
   margin-bottom: 8px;
   font-family: var(--font-reddit);
 }
@@ -88,8 +95,16 @@
   font-size: 16px;
   line-height: 120%;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--color-text);
   margin-bottom: 4px;
+}
+
+.back ul {
+  padding-left: 18px;
+}
+
+.back ul li {
+  color: var(--color-text);
 }
 
 .card:hover .front {
@@ -124,6 +139,9 @@
 }
 
 @media (max-width: 768px) {
+  .layout-container {
+    background: var(--color-primary-soft) !important;
+  }
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -135,7 +153,7 @@
     font-size: 40px;
     line-height: 100%;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-text);
     margin-bottom: 16px;
   }
 
@@ -209,23 +227,35 @@
 
   .carousel {
     display: block;
+    background: var(--color-primary-soft);
   }
 
   .carouselTrack {
     display: flex;
     flex-direction: column;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: transform 0.35s ease, opacity 0.35s ease;
     will-change: transform, opacity;
+    background: var(--color-primary-soft);
   }
 
-  .fadeIn {
+  .slideInRight {
+    transform: translateX(0);
     opacity: 1;
-    transform: translateY(0);
   }
 
-  .fadeOut {
+  .slideInLeft {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .slideOutLeft {
+    transform: translateX(-40px);
     opacity: 0;
-    transform: translateY(12px);
+  }
+
+  .slideOutRight {
+    transform: translateX(40px);
+    opacity: 0;
   }
 
   .dots {
@@ -239,13 +269,13 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ffffff55;
+    background-color: var(--color-text-tint);
     border: none;
     cursor: pointer;
   }
 
   .activeDot {
-    background-color: #ffffff;
+    background-color: var(--color-text);
     width: 24px;
     border-radius: 8px;
   }

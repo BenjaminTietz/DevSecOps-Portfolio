@@ -11,7 +11,7 @@ const ProjectHighlights: React.FC = () => {
     <section className={styles.section} id="projects">
       <div className={`layout-container ${styles.container}`}>
         <h2 className={styles.title}>My project highlights</h2>
-        <div className={styles.container}>
+        <div className={styles.wrapper}>
           {/* LEFT LIST (DESKTOP ONLY) */}
           <div className={styles.projectList}>
             <ol className={styles.list}>
@@ -84,10 +84,13 @@ const ProjectHighlights: React.FC = () => {
 
           {/* MOBILE: PROJECT CARDS */}
           <div className={styles.mobileOnly}>
-            {projects.slice(0, 3).map((project) => (
+            {projects.slice(0, 3).map((project, index) => (
               <div key={project.id} className={styles.card}>
                 <div className={styles.cardHeader}>
-                  <h3>{project.title}</h3>
+                  <h3>
+                    <span className={styles.projectIndex}>{index + 1}.</span>{" "}
+                    {project.title}
+                  </h3>
                   <div className={styles.tags}>
                     {project.tech.map((techKey) => {
                       const tech = TECH_ICONS[techKey];
