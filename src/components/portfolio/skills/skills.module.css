@@ -174,8 +174,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-    padding: 8px;
-    min-height: 155px;
+    padding: 0 8px;
+    min-height: 160px;
     height: auto;
   }
 
@@ -218,7 +218,6 @@
   .carouselTrack {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     transition: opacity 0.3s ease, transform 0.3s ease;
     will-change: transform, opacity;
   }
@@ -253,5 +252,19 @@
     background-color: #ffffff;
     width: 24px;
     border-radius: 8px;
+  }
+
+  .carousel .card {
+    border-radius: 0;
+  }
+
+  .carousel .card:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .carousel .card:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
