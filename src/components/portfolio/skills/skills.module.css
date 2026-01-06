@@ -20,19 +20,20 @@
   line-height: 120%;
   font-weight: 700;
   color: var(--color-text);
-  margin-bottom: 64px;
+  margin-block-end: 0;
   font-family: var(--font-quicksand);
 }
 
 .subTitle {
-  display: none;
   color: var(--color-text);
+  display: none;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  margin-top: 40px;
 }
 
 .card {
