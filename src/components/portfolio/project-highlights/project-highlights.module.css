@@ -452,6 +452,10 @@
     width: 100%;
   }
 
+  .tag {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+
   .actions {
     margin-top: 16px;
     align-items: center;
