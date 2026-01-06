@@ -109,7 +109,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://github.com/BenjaminTietz/DevSecOps-Blog",
+          href: "https://github.com/BenjaminTietz",
           label: "Github",
           position: "right",
         },

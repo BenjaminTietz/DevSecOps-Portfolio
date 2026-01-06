@@ -1,16 +1,15 @@
-## ⚠️ Legal & Hosting Notice
+---
+id: conduit-compose
+title: Conduit Compose
+sidebar_label: Conduit Compose
+sidebar_position: 3
+---
 
-This project is intended for educational and local development purposes only.
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
-It is **not suitable for public hosting or production use**, as it does not
-provide any GDPR-compliant features such as:
-
-- Privacy policy
-- Legal notice / imprint
-- Consent handling for personal data
-
-Do not deploy or expose this application publicly without adding the
-required legal and compliance-related components.
+<GithubLinkAdmonition link="- https://github.com/BenjaminTietz/conduit-compose" text="Github Repository" type="info">
+**Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
+</GithubLinkAdmonition>
 
 # Conduit Containerized
 
@@ -21,8 +20,7 @@ required legal and compliance-related components.
 3. [Quickstart](#quickstart)
 4. [Environment Variables](#environment-variables)
 5. [Usage](#usage)
-6. [Contact](#contact)
-7. [Checklist](https://github.com/BenjaminTietz/conduit-compose/blob/dev/checklist.pdf)
+6. [Checklist](https://github.com/BenjaminTietz/conduit-compose/blob/dev/checklist.pdf)
 
 ---
 
@@ -161,20 +159,3 @@ Logs can optionally be persisted by redirecting Docker logs to a file.
 docker logs conduit_backend > conduit_backend-logs.txt
 docker logs conduit_frontend > conduit_frontend-logs.txt
 ```
-
-## Contact
-
-### 👤 Personal
-
-Benjamin Tietz
-
-- Portfolio: https://benjamin-tietz.com
-- Mail: mail@benjamin-tietz.com
-
-### 🌍 Social
-
-- LinkedIn: https://www.linkedin.com/in/benjamin-tietz/
-
-### 💻 Project Repository
-
-- https://github.com/BenjaminTietz/conduit-compose

@@ -11,7 +11,7 @@ import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 **Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
 </GithubLinkAdmonition>
 
-# Django E-Commerce Webshop 🏍️
+# Django E-Commerce Webshop
 
 ## This project is a full-featured e-commerce web application built using Django and deployed with Docker on a V-Server.
 
@@ -30,9 +30,7 @@ This Django-based webshop allows users to register, log in, browse products, app
 3. [Usage](#usage)
 4. [Requirements](#requirements)
 5. [Screenshots](#photos)
-6. [Contact](#contact)
-7. [Checklist](https://github.com/BenjaminTietz/baby-tools-shop/blob/main/checklist_update.pdf)
-8. [Docker Cheat-Sheet](https://github.com/BenjaminTietz/baby-tools-shop/blob/main/docker-cheatsheet.md)
+6. [Checklist](https://github.com/BenjaminTietz/baby-tools-shop/blob/main/checklist_update.pdf)
 
 ## Quickstart
 

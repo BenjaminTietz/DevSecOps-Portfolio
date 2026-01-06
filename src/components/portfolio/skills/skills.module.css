@@ -1,6 +1,6 @@
 .skills {
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-stage);
 }
 
 .layout-container {
@@ -234,7 +234,6 @@
     flex-direction: column;
     transition: transform 0.35s ease, opacity 0.35s ease;
     will-change: transform, opacity;
-    background: var(--color-primary-soft);
   }
 
   .slideInRight {

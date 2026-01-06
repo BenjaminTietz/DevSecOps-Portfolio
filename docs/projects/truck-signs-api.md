@@ -1,3 +1,15 @@
+---
+id: truck-signs-api
+title: Truck Signs API
+sidebar_label: Truck Signs API
+sidebar_position: 5
+---
+
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
+
+<GithubLinkAdmonition link="https://github.com/BenjaminTietz/truck_signs_api" text="Github Repository" type="info">
+**Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
+</GithubLinkAdmonition>
 # Truck Signs App
 
 ## A modern, containerized App built with Django, designed to be deployed via Docker.
@@ -9,8 +21,7 @@
 3. [Quickstart](#quickstart)
 4. [Usage](#usage)
 5. [Environment Variables](#environment-variables)
-6. [Contact](#contact)
-7. [Checklist](https://github.com/BenjaminTietz/truck_signs_api/blob/development/checklist.pdf)
+6. [Checklist](https://github.com/BenjaminTietz/truck_signs_api/blob/development/checklist.pdf)
 
 ---
 
@@ -160,21 +171,6 @@ docker run -d \
 ```
 
 ---
-
-## Contact
-
-### 👤 Personal
-
-- [Portfolio](https://benjamin-tietz.com/)
-- [Drop me a mail](mailto:mail@benjamin-tietz.com)
-
-### 🌍 Social
-
-- [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)
-
-### 💻 Project Repository
-
-- [GitHub Repository](https://github.com/BenjaminTietz/truck_signs_api)
 
 <div align="center">
 

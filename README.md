@@ -1,44 +1,100 @@
-# Website
+# Docusaurus Portfolio
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Table of Contents
 
-### Installation
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Quickstart](#quickstart)
+4. [Project Structure](#project-structure)
+5. [Usage](#usage)
+6. [Build & Deployment](#build--deployment)
+7. [Checklist](checklist.pdf)
+8. [Contact](#contact)
 
+---
+
+## Introduction
+
+This repository contains my personal developer portfolio built with Docusaurus
+and React + TypeScript.
+
+The goal of this project is to showcase my skills, projects and clean
+development practices including Git workflows, component structure and
+documentation.
+
+---
+
+## Prerequisites
+
+- A V-Server
+
+---
+
+## Quickstart
+
+Requirements:
+
+- Node.js >= 18
+- npm or yarn
+
+### 1. Clone the repository (including submodules)
+
+```bash
+git clone  https://github.com/BenjaminTietz/DevSecOps-Portfolio
+cd DevSecOps-Portfolio
 ```
-npm install -g pnpm   for global installation
-or
-pnpm install
 
-```
+---
 
-### Local Development
+## Project Structure
 
-```
-pnpm start
-```
+docusaurus-portfolio/
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- src/components
+- src/pages
+- static
+- docusaurus.config.ts
+- README.md
 
-### Build
+---
 
-```
-$ pnpm build
-```
+## How to Start local dev Server
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+git clone https://github.com/BenjaminTietz/DevSecOps-Portfolio
+cd docusaurus-portfolio
+npm install
+npm run start
 
-### Deployment
+---
 
-Using SSH:
+## Usage
 
-```
-$ USE_SSH=true pnpm deploy
-```
+Content can be modified in src/components.
+Each component is typed with TypeScript and styled using CSS Modules.
 
-Not using SSH:
+---
 
-```
-$ GIT_USER=<Your GitHub username> pnpm deploy
-```
+## Build & Deployment
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+npm run build
+
+The build output can be deployed using GitHub Pages, GitLab Pages or NGINX.
+
+---
+
+## Contact
+
+### 👤 Personal
+
+Benjamin Tietz
+
+- Portfolio: https://benjamin-tietz.com
+- Mail: mail@benjamin-tietz.com
+
+### 🌍 Social
+
+- LinkedIn: https://www.linkedin.com/in/benjamin-tietz/
+
+### 💻 Project Repository
+
+- https://github.com/BenjaminTietz/DevSecOps-Portfolio
