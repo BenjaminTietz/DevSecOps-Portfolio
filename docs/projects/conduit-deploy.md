@@ -1,17 +1,15 @@
-## Legal & Hosting Notice
+---
+id: conduit-deploy
+title: Conduit Deploy
+sidebar_label: Conduit Deploy
+sidebar_position: 4
+---
 
-This project is intended **for educational purposes only**.
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
-The application is **not publicly hosted** and **not exposed to the internet** by default.
-This is a deliberate decision, as the project does **not include GDPR-required components**
-such as:
-
-- Privacy policy
-- Legal notice / imprint
-- Consent handling
-
-Do **not** deploy or expose this application publicly without adding the required
-legal and compliance-related features.
+<GithubLinkAdmonition link="- https://github.com/BenjaminTietz/conduit-deployment" text="Github Repository" type="info">
+**Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
+</GithubLinkAdmonition>
 
 # Conduit Deployment (Docker & CI/CD)
 
@@ -26,7 +24,6 @@ legal and compliance-related features.
 7. [Usage](#usage)
 8. [Logging](#logging)
 9. [Checklist](https://github.com/BenjaminTietz/conduit-deployment/blob/dev/checklist.pdf)
-10. [Contact](#contact)
 
 ---
 
@@ -193,20 +190,3 @@ Logs can optionally be persisted by redirecting Docker logs to a file.
 docker logs conduit_backend > conduit_backend-logs.txt
 docker logs conduit_frontend > conduit_frontend-logs.txt
 ```
-
-## Contact
-
-### 👤 Personal
-
-Benjamin Tietz
-
-- Portfolio: https://benjamin-tietz.com
-- Mail: mail@benjamin-tietz.com
-
-### 🌍 Social
-
-- LinkedIn: https://www.linkedin.com/in/benjamin-tietz/
-
-### 💻 Project Repository
-
-- https://github.com/BenjaminTietz/conduit-deployment

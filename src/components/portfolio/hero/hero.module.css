@@ -85,6 +85,7 @@
 
   .textTop {
     order: 1;
+    text-align: left;
   }
 
   .imageWrapper {
@@ -141,8 +142,8 @@
   }
 
   .role {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 100%;
     margin-bottom: 24px;
   }
 

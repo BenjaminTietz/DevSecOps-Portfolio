@@ -1,3 +1,15 @@
+---
+id: wordpress
+title: WordPress
+sidebar_label: WordPress
+sidebar_position: 5
+---
+
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
+
+<GithubLinkAdmonition link="https://github.com/BenjaminTietz/wordpress-docker" text="Github Repository" type="info">
+**Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
+</GithubLinkAdmonition>
 # WordPress Dockerized
 
 ## Table of Contents
@@ -107,18 +119,3 @@ MARIADB_DATABASE=wordpress
 MARIADB_USER=wp_user
 MARIADB_PASSWORD=wp_pass
 ```
-
-## Contact
-
-### 👤 Personal
-
-- [Portfolio](https://benjamin-tietz.com/)
-- [Drop me a mail](mailto:mail@benjamin-tietz.com)
-
-### 🌍 Social
-
-- [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)
-
-### 💻 Project Repository
-
-- [GitHub Repository](https://github.com/BenjaminTietz/wordpress-docker)

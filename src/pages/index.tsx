@@ -8,15 +8,15 @@ import ProjectHighlights from "../components/portfolio/project-highlights";
 import Contact from "../components/portfolio/contact";
 import Footer from "../components/portfolio/footer";
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
-    <section title="Portfolio">
+    <main className="portfolio-root">
       <Header />
       <Hero />
       <Skills />
       <ProjectHighlights />
       <Contact />
       <Footer />
-    </section>
+    </main>
   );
 }

@@ -12,12 +12,7 @@ const Hero: React.FC = () => {
             <span className={styles.greeting}>Hey there. 👋 I am</span>
             <h1 className={styles.name}>Benjamin Tietz</h1>
 
-            <h2 className={styles.role}>
-              DevSecOps Engineer{" "}
-              <span style={{ fontWeight: 400 }}>
-                with a passion for secure, real-world systems
-              </span>
-            </h2>
+            <h2 className={styles.role}>DevSecOps Engineer </h2>
           </div>
 
           <div className={styles.mobileWrapper}>

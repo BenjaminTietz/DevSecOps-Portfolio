@@ -1,6 +1,18 @@
+---
+id: minecraft-server
+title: Minecraft Server
+sidebar_label: Minecraft Server
+sidebar_position: 4
+---
+
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
+
+<GithubLinkAdmonition link="- https://github.com/BenjaminTietz/minecraft-server" text="Github Repository" type="info">
+**Reach me out via** [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)**,** [Portfolio Contact Form](https://benjamin-tietz.com/#contactMe) **or** [Drop me a mail](mailto:mail@benjamin-tietz.com)
+</GithubLinkAdmonition>
 # Minecraft Server with Docker & mcstatus
 
-## 📘 Table of Contents
+## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
@@ -10,8 +22,7 @@
 6. [Verify Server Status](#verify-server-status-without-minecraft-client)
 7. [Minimal docker-compose.yml](#minimal-docker-composeyml)
 8. [Stop and Cleanup](#stop-and-cleanup)
-9. [Contact](#contact)
-10. [Checklist](https://github.com/BenjaminTietz/minecraft-server/blob/dev/checklist.pdf)
+9. [Checklist](https://github.com/BenjaminTietz/minecraft-server/blob/dev/checklist.pdf)
 
 ---
 
@@ -165,18 +176,3 @@ rm -rf ./data
 ```
 
 ---
-
-## Contact
-
-### 👤 Personal
-
-- [Portfolio](https://benjamin-tietz.com/)
-- [Drop me a mail](mailto:mail@benjamin-tietz.com)
-
-### 🌍 Social
-
-- [LinkedIn](https://www.linkedin.com/in/benjamin-tietz/)
-
-### 💻 Project Repository
-
-- [GitHub Repository](https://github.com/BenjaminTietz/minecraft-server)

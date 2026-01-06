@@ -1,9 +1,9 @@
 .footer {
-  background-color: var(--color-bg);
+  background-color: #262e34;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
-  color: var(--color-text);
+  background-color: var(--color-bg-stage);
   position: relative;
 }
 
