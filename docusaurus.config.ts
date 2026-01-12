@@ -91,7 +91,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "DevSecOps Docs & Blog",
+      title: "DevSecOps Portfolio",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.png",
@@ -111,7 +111,7 @@ const config: Config = {
         },
         {
           href: "https://benjamin-tietz.com/",
-          label: "Portfolio",
+          label: "Fullstack Portfolio",
           position: "right",
         },
       ],
