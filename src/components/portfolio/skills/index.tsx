@@ -1,66 +1,143 @@
 import React, { useState } from "react";
 import styles from "./skills.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 const ITEMS_PER_PAGE = 3;
 const SWIPE_THRESHOLD = 50;
 
-const skills = [
+type Lang = "en" | "de";
+
+/* ---------- MULTILINGUAL CONTENT ---------- */
+
+const TEXT: Record<
+  Lang,
   {
-    label: "HTML",
-    icon: "/img/portfolio/icons/html.png",
-    details: ["User-friendly navigation", "Responsive layouts"],
+    title: string;
+    subtitle: string;
+    skills: {
+      label: string;
+      icon: string;
+      details: string[];
+    }[];
+  }
+> = {
+  en: {
+    title: "My skills",
+    subtitle: "Where I applied my skills",
+    skills: [
+      {
+        label: "HTML",
+        icon: "/img/portfolio/icons/html.png",
+        details: ["User-friendly navigation", "Responsive layouts"],
+      },
+      {
+        label: "CSS",
+        icon: "/img/portfolio/icons/css.png",
+        details: ["Flexbox & Grid", "Transitions & animations"],
+      },
+      {
+        label: "Docusaurus",
+        icon: "/img/portfolio/icons/docusaurus.png",
+        details: ["Docs & MDX", "Static sites"],
+      },
+      {
+        label: "Python",
+        icon: "/img/portfolio/icons/python.png",
+        details: ["Automation", "Scripting"],
+      },
+      {
+        label: "Shell",
+        icon: "/img/portfolio/icons/shell_scripting.png",
+        details: ["CLI tooling", "Task automation"],
+      },
+      {
+        label: "YAML",
+        icon: "/img/portfolio/icons/yaml.png",
+        details: ["CI/CD configs"],
+      },
+      {
+        label: "Container",
+        icon: "/img/portfolio/icons/docker.png",
+        details: ["Docker & images"],
+      },
+      {
+        label: "CI/CD",
+        icon: "/img/portfolio/icons/cicd.png",
+        details: ["GitHub Actions"],
+      },
+      {
+        label: "Security",
+        icon: "/img/portfolio/icons/security.png",
+        details: ["Pentesting", "Hardening"],
+      },
+    ],
   },
-  {
-    label: "CSS",
-    icon: "/img/portfolio/icons/css.png",
-    details: ["Flexbox & Grid", "Transitions & animations"],
+
+  de: {
+    title: "Meine Skills",
+    subtitle: "Wo ich meine Fähigkeiten eingesetzt habe",
+    skills: [
+      {
+        label: "HTML",
+        icon: "/img/portfolio/icons/html.png",
+        details: ["Benutzerfreundliche Navigation", "Responsive Layouts"],
+      },
+      {
+        label: "CSS",
+        icon: "/img/portfolio/icons/css.png",
+        details: ["Flexbox & Grid", "Animationen & Transitions"],
+      },
+      {
+        label: "Docusaurus",
+        icon: "/img/portfolio/icons/docusaurus.png",
+        details: ["Dokumentation & MDX", "Statische Webseiten"],
+      },
+      {
+        label: "Python",
+        icon: "/img/portfolio/icons/python.png",
+        details: ["Automatisierung", "Skripting"],
+      },
+      {
+        label: "Shell",
+        icon: "/img/portfolio/icons/shell_scripting.png",
+        details: ["CLI-Tools", "Task-Automatisierung"],
+      },
+      {
+        label: "YAML",
+        icon: "/img/portfolio/icons/yaml.png",
+        details: ["CI/CD-Konfigurationen"],
+      },
+      {
+        label: "Container",
+        icon: "/img/portfolio/icons/docker.png",
+        details: ["Docker & Images"],
+      },
+      {
+        label: "CI/CD",
+        icon: "/img/portfolio/icons/cicd.png",
+        details: ["GitHub Actions"],
+      },
+      {
+        label: "Security",
+        icon: "/img/portfolio/icons/security.png",
+        details: ["Pentesting", "Hardening"],
+      },
+    ],
   },
-  {
-    label: "Docusaurus",
-    icon: "/img/portfolio/icons/docusaurus.png",
-    details: ["Docs & MDX", "Static sites"],
-  },
-  {
-    label: "Python",
-    icon: "/img/portfolio/icons/python.png",
-    details: ["Automation", "Scripting"],
-  },
-  {
-    label: "Shell",
-    icon: "/img/portfolio/icons/shell_scripting.png",
-    details: ["CLI tooling", "Task automation"],
-  },
-  {
-    label: "YAML",
-    icon: "/img/portfolio/icons/yaml.png",
-    details: ["CI/CD configs"],
-  },
-  {
-    label: "Container",
-    icon: "/img/portfolio/icons/docker.png",
-    details: ["Docker & images"],
-  },
-  {
-    label: "CI/CD",
-    icon: "/img/portfolio/icons/cicd.png",
-    details: ["GitHub Actions"],
-  },
-  {
-    label: "Security",
-    icon: "/img/portfolio/icons/security.png",
-    details: ["Pentesting", "Hardening"],
-  },
-];
+};
 
 const Skills: React.FC = () => {
+  const { lang } = useLanguage();
+  const content = TEXT[lang];
+
   const [page, setPage] = useState(0);
   const [direction, setDirection] = useState<"next" | "prev">("next");
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
-  const totalPages = Math.ceil(skills.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(content.skills.length / ITEMS_PER_PAGE);
 
-  const visibleSkills = skills.slice(
+  const visibleSkills = content.skills.slice(
     page * ITEMS_PER_PAGE,
     page * ITEMS_PER_PAGE + ITEMS_PER_PAGE
   );
@@ -77,15 +154,10 @@ const Skills: React.FC = () => {
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX === null) return;
-
     const diff = touchStartX - e.changedTouches[0].clientX;
 
     if (Math.abs(diff) > SWIPE_THRESHOLD) {
-      if (diff > 0) {
-        changePage(page + 1, "next");
-      } else {
-        changePage(page - 1, "prev");
-      }
+      diff > 0 ? changePage(page + 1, "next") : changePage(page - 1, "prev");
     }
 
     setTouchStartX(null);
@@ -94,11 +166,12 @@ const Skills: React.FC = () => {
   return (
     <section className={styles.skills} id="skills">
       <div className={`layout-container ${styles.container}`}>
-        <h2 className={styles.title}>My skills</h2>
-        <span className={styles.subTitle}>Where I applied my skills</span>
+        <h2 className={styles.title}>{content.title}</h2>
+        <span className={styles.subTitle}>{content.subtitle}</span>
+
         {/* DESKTOP GRID */}
         <div className={styles.grid}>
-          {skills.map((skill) => (
+          {content.skills.map((skill) => (
             <div key={skill.label} className={styles.card}>
               <div className={styles.front}>
                 <img

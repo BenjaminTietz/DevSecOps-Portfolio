@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
-type Lang = "en" | "de";
-
-const TEXT: Record<
-  Lang,
-  { about: string; skills: string; projects: string; contact: string }
-> = {
+const TEXT = {
   en: {
     about: "About me",
     skills: "My skills",
@@ -23,21 +19,20 @@ const TEXT: Record<
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState<Lang>("en");
+
+  const { lang, setLang } = useLanguage();
 
   const t = TEXT[lang];
 
   return (
     <header id="top" className={styles.header}>
       <div className={`layout-container ${styles.container}`}>
-        {/* Desktop Navigation */}
         <nav className={styles.nav}>
           <a href="#about">{t.about}</a>
           <a href="#skills">{t.skills}</a>
           <a href="#projects">{t.projects}</a>
           <a href="#contact">{t.contact}</a>
 
-          {/* Language Switch Desktop */}
           <div className={styles.langSwitch}>
             <button
               className={lang === "en" ? styles.active : ""}
@@ -55,7 +50,6 @@ const Header: React.FC = () => {
           </div>
         </nav>
 
-        {/* Burger Button (Mobile) */}
         <button
           className={styles.burger}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -67,30 +61,16 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Overlay Menu */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
-        <button
-          className={styles.close}
-          onClick={() => setMenuOpen(false)}
-          aria-label="Close menu"
-        >
+        <button className={styles.close} onClick={() => setMenuOpen(false)}>
           ✕
         </button>
 
-        <a href="#about" onClick={() => setMenuOpen(false)}>
-          {t.about}
-        </a>
-        <a href="#skills" onClick={() => setMenuOpen(false)}>
-          {t.skills}
-        </a>
-        <a href="#projects" onClick={() => setMenuOpen(false)}>
-          {t.projects}
-        </a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>
-          {t.contact}
-        </a>
+        <a href="#about">{t.about}</a>
+        <a href="#skills">{t.skills}</a>
+        <a href="#projects">{t.projects}</a>
+        <a href="#contact">{t.contact}</a>
 
-        {/* Language Switch Mobile */}
         <div className={styles.mobileLangSwitch}>
           <button
             className={lang === "en" ? styles.active : ""}
