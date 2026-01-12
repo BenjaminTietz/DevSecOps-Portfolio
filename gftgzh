@@ -1,0 +1,162 @@
+[33m3d6edca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m Merge branch 'development' of github.com:BenjaminTietz/DevSecOps-Blog into development
+[33mffc59bc[m ci: fix GitHub Pages deploy blocked by conditional PR job
+[33m1033aac[m Merge branch 'main' into development
+[33m5c6ee83[m style: recent mobile adjustments
+[33m1cdbfc4[m docs: add checklist
+[33m7be38ff[m docs: add xss injection challenge
+[33m7467545[m docs: add bully-chatbot challenge
+[33mcb3d790[m docs add Dom xss & photo wall challenges
+[33m0ea5c3c[m fix: broken link
+[33m341ef2d[m docs: move folders to archive
+[33m2261e8a[m Merge pull request #39 from BenjaminTietz/development
+[33mb6f6839[m fix change folderstructure to not display guides & knowledge-base
+[33ma65accc[m Merge pull request #38 from BenjaminTietz/development
+[33me1d2c65[m fix change folderstructure to not display guides & knowledge-base
+[33mbc7bee7[m Merge pull request #37 from BenjaminTietz/development
+[33m9b1f23f[m refactor(portfolio): introduce language context and multilingual sections
+[33mb180c78[m refactor(header): add language switch for desktop and mobile navigation
+[33m741a3e7[m style: recent changes
+[33m0a9fb24[m chore(docusaurus): customize footer for full-stack & devsecops profile
+[33m255d644[m docs(pentesting): add Easy XSS Challenge 02 analysis (no parentheses)
+[33ma551c01[m Merge pull request #36 from BenjaminTietz/development
+[33mf8bade7[m docs(pentesting): add Easy XSS Challenge 01 analysis (no alphabets or digits)
+[33mfb9ac20[m docs(pentesting): add detailed Baby XSS Challenge 13 analysis
+[33m93ae5d1[m docs(pentesting): add extended Google XSS Game levels 16 walkthrough
+[33m2ceddf8[m docs: add 1 Star Challenge - confidental document
+[33m69906e4[m docs: add 1 Star challenge + add disclaimer admonition
+[33mcfd4b3e[m docs: add description for adding juiceshop autostart
+[33m550b357[m docs: add pentest report template
+[33mc38a900[m Merge pull request #35 from BenjaminTietz/development
+[33mb3d7c32[m docs: add initial pentesting structure for OWASP Juice Shop Master
+[33m8795010[m Merge pull request #34 from BenjaminTietz/development
+[33m83ce4d7[m style: adjust padding spacing etcpp
+[33m8e6b5a0[m Merge pull request #33 from BenjaminTietz/development
+[33m64ac3c6[m style: adjust padding spacing etcpp
+[33m03679ea[m Merge pull request #32 from BenjaminTietz/development
+[33m119f425[m docs: refactor layout
+[33md497ab2[m style: adjust padding spacing etcpp
+[33m7e2e202[m Merge pull request #31 from BenjaminTietz/development
+[33m0a98644[m style: adjust padding spacing etcpp
+[33m93478e1[m Merge pull request #30 from BenjaminTietz/development
+[33mf2bff4c[m style: adjust padding spacing etcpp
+[33m3f6079e[m Merge pull request #29 from BenjaminTietz/development
+[33m999a77b[m style: adjust padding spacing etcpp
+[33ma325ec3[m Merge pull request #28 from BenjaminTietz/development
+[33m94cc4c7[m refactor(content): rewrite portfolio copy to reflect positive learning experience
+[33m1fa5635[m Merge pull request #27 from BenjaminTietz/development
+[33m5d380c9[m style: recent responsive adjustments
+[33m19cb3c6[m style: recent responsive adjustments
+[33m52bb223[m style: recent responsive adjustments
+[33m68528bd[m Merge pull request #26 from BenjaminTietz/development
+[33m39f0a5f[m refactor(skills): replace mobile list with swipeable carousel and smooth transitions
+[33m2ddf5ba[m Merge pull request #25 from BenjaminTietz/development
+[33mba5e396[m refactor(legal-notice): replace inline styles with theme-aware CSS module
+[33mba6719b[m Merge pull request #24 from BenjaminTietz/development
+[33m71a2c7a[m style: recent responsive adjustments
+[33m8b33a79[m Merge pull request #23 from BenjaminTietz/development
+[33m0c6521b[m style: recent responsive adjustments
+[33mef03a08[m Merge pull request #22 from BenjaminTietz/development
+[33m045d7f9[m style: recent responsive adjustments
+[33m787a119[m Merge pull request #21 from BenjaminTietz/development
+[33mac860ad[m style: recent responsive adjustments
+[33m653ee1d[m style: recent responsive adjustments
+[33m5052b4a[m Merge pull request #20 from BenjaminTietz/development
+[33m9ad2d4e[m style: recent responsive adjustments
+[33m7772db9[m Merge pull request #19 from BenjaminTietz/development
+[33m7e75d4e[m style: add pictures to project comp
+[33m6731f08[m Merge pull request #18 from BenjaminTietz/development
+[33mbdd1ac1[m style(skills) responsive
+[33m3cb224b[m style(hero & skills) responsive
+[33m8671933[m Merge pull request #17 from BenjaminTietz/development
+[33m5c5817d[m feat(imprint) add back to portfolio btn
+[33m3c75458[m fix: scroll top top und smooth scroll
+[33m069b235[m Merge pull request #16 from BenjaminTietz/development
+[33m579ad75[m update text
+[33m04a7657[m feat(header): implement mobile overlay menu with slide animation and close button
+[33m453c4e3[m Merge pull request #15 from BenjaminTietz/development
+[33m2659725[m refactor(projects) : add more projects and repo / documentation links
+[33maff8c3d[m Merge pull request #14 from BenjaminTietz/development
+[33m2ff00cc[m style(ui): add hover effects to btns
+[33m2895dd0[m style(ui): enable global smooth scrolling
+[33md3c96ab[m Merge pull request #13 from BenjaminTietz/development
+[33mc5090d2[m style(projects): add smooth hover and active transitions
+[33ma9b2fe8[m refactor(ui): implement hover overlay for skills section
+[33m00c7a44[m Merge pull request #12 from BenjaminTietz/development
+[33mcbaf8df[m fix(legal): ensure legal notice link works with baseUrl
+[33me66aa81[m Merge pull request #11 from BenjaminTietz/development
+[33m8e6691b[m feat(legal): add german legal notice and GDPR-compliant privacy policy
+[33m8c00af2[m feat(portfolio): add footer with scroll to top
+[33md4e6e9a[m Merge pull request #10 from BenjaminTietz/development
+[33m67b450a[m feat(portfolio): add contact section
+[33me57c5fd[m feat(portfolio): add dynamic project highlights section
+[33md1b3c36[m Merge pull request #9 from BenjaminTietz/development
+[33md2a181a[m chore(deploy): fix GitHub Pages deployment branch
+[33mf48f43a[m chore(deploy): fix GitHub Pages deployment branch
+[33m8bc134f[m feat(portfolio): add skills section layout
+[33mb2d4e26[m feat(portfolio): add initial responsive hero section
+[33m892b935[m style: add global typography with Quicksand and Reddit Sans
+[33m28b9501[m feat(portfolio): add initial responsive header layout
+[33mc8c2c7b[m Merge pull request #8 from BenjaminTietz/development
+[33mb38dfae[m docs: add conduit-deploy project to Docusaurus docs
+[33m11b3f21[m docs: add conduit-deploy project to Docusaurus docs
+[33m0aa2aaa[m Merge pull request #7 from BenjaminTietz/development
+[33md349611[m docs: add minecraft-server project to Docusaurus docs
+[33m02fdb31[m docs: add wordprewss project to Docusaurus docs
+[33m42af310[m Merge pull request #6 from BenjaminTietz/development
+[33m42b1faf[m fix : broken link
+[33mb73c68b[m Merge pull request #5 from BenjaminTietz/development
+[33m0c0f918[m docs: add Truck Signs API project to Docusaurus docs
+[33m9c60425[m Merge pull request #4 from BenjaminTietz/development
+[33m031baa3[m fix: fix broken links within the v-server-prjocet. md and add detailed instructi on on how to use git & setsting
+[33mc29d446[m feat: add Linux server administration guide
+[33mcf8c129[m feat: add Linux command line basics guide
+[33mc967d0e[m refactor: add folder for v-server-setup and structure for additonal content
+[33ma55a62f[m feat: add linux cheat-sheet for pentester
+[33ma4764af[m Merge pull request #3 from BenjaminTietz/development
+[33mb1eb6dd[m fix: broken link
+[33m937b65d[m Merge pull request #2 from BenjaminTietz/development
+[33mabceb4a[m feat: add 2 projcts (v-server-setup && baby-tools-shop
+[33m47ec30b[m Merge pull request #1 from BenjaminTietz/development
+[33mcf44226[m Merge branch 'fix-config' into development
+[33m3e3610b[m[33m ([m[1;32mmain[m[33m)[m fix: fix link & add comment / command to config
+[33me1603b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m style: add mor personal info
+[33m2e10f0b[m style: add personal data & logo
+[33m45b0c36[m fix: adjust baseUrl config
+[33m10329d6[m chore: update docusaurus.config.ts for GitHub Pages deployment
+[33m6e5ec11[m Initial commit
+[33mc17413c[m[33m ([m[1;31mupstream/fix-config[m[33m, [m[1;32mfix-config[m[33m)[m docs: update readme with instructions
+[33m06ee336[m PR for testing (#8)
+[33m4f0de02[m refactor: remove redundant docs
+[33m39a42f2[m Merge branch 'main' of github.com:spmse/dev-blog-template into fix-config
+[33mfec9b00[m GitHub admonition (#7)
+[33m3c88881[m chore: add example project page
+[33m5f938c7[m fix: add missing env config
+[33m7cced93[m ci: add deployment for main
+[33m4b48fb4[m docs: finalize docusaurus setup
+[33m2373b83[m Merge pull request #3 from spmse/fix-config
+[33m923f02c[m ci: adjust workflow triggers
+[33m4add4e3[m ci: adjust workflow triggers
+[33md0d309a[m fix: adjust docusaurus config with valid baseUrl
+[33mabfec3d[m Merge pull request #2 from spmse/another-demo
+[33m0d72f9c[m ci: adjust needs for workflow
+[33m4c055a1[m fix: adjust workflow reference
+[33m74a8c05[m fix: adjust workflow reference
+[33me016ddd[m fix: adjust workflow reference
+[33m1fba5b9[m fix: adjust workflow reference
+[33m4b14201[m ci: add main.yml to abstract pipeline execution
+[33mbc4ff09[m ci: adjust workflow triggers
+[33m9c92323[m ci: adjust PR title
+[33me8011b8[m ci: adjust if-rules for deploy job
+[33mec0346b[m ci: update workflow to recursively copy directory contents for pages deployment
+[33mbc110b1[m chore: update project contents
+[33m18b125b[m ci: adjust package manager scripts
+[33mab8e5bf[m ci: adjust package manager
+[33mb4c111b[m fix: use 'correct' quotes for github
+[33m2419b4f[m ci: add deployment for main
+[33m381e137[m ci: update workflow config
+[33m99d01cf[m ci: update workflow config
+[33m06e9187[m ci: update workflow config
+[33m230d15e[m docs: update README
+[33m3ad75f8[m ci: update workflow config
+[33mb43584b[m chore: update project structure
+[33m5da088f[m chore: init project
