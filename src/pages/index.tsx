@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "@theme/Layout";
 
 import Header from "../components/portfolio/header";
 import Hero from "../components/portfolio/hero";
@@ -8,15 +7,19 @@ import ProjectHighlights from "../components/portfolio/project-highlights";
 import Contact from "../components/portfolio/contact";
 import Footer from "../components/portfolio/footer";
 
+import { LanguageProvider } from "../contexts/LanguageContext";
+
 export default function Home() {
   return (
-    <main className="portfolio-root">
-      <Header />
-      <Hero />
-      <Skills />
-      <ProjectHighlights />
-      <Contact />
-      <Footer />
-    </main>
+    <LanguageProvider>
+      <main className="portfolio-root">
+        <Header />
+        <Hero />
+        <Skills />
+        <ProjectHighlights />
+        <Contact />
+        <Footer />
+      </main>
+    </LanguageProvider>
   );
 }
