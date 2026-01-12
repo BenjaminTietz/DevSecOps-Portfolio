@@ -13,10 +13,6 @@ const moreColumn = {
       href: "https://github.com/BenjaminTietz",
     },
     {
-      label: "Portfolio",
-      href: "https://benjamin-tietz.com/",
-    },
-    {
       label: "LinkedIn",
       href: "https://linkedin.com/in/benjamin-tietz/",
     },
@@ -124,47 +120,38 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "About",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/guides/intro",
+              label: "Full-Stack Developer",
+              to: "https://benjamin-tietz.com/",
+            },
+            {
+              label: "DevSecOps Engineer",
+              to: "https://benjamintietz.github.io/DevSecOps-Portfolio",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Documentation",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "DevSecOps Guides",
+              to: "/docs",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Penetration Testing",
+              to: "/docs/pentesting/overview",
             },
           ],
         },
         moreColumn,
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //     blogEnabled && {
-        //       label: 'Blog',
-        //       to: '/blog',
-        //     },
-        //   ],
-        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `
+    © ${new Date().getFullYear()} Benjamin Tietz <br/>
+    Full-Stack Developer & DevSecOps Engineer<br/>
+    Built with Docusaurus and ❤️
+  `,
     },
     prism: {
       theme: prismThemes.github,
