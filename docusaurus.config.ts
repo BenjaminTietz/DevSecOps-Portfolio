@@ -137,7 +137,7 @@ const config: Config = {
           items: [
             {
               label: "DevSecOps Guides",
-              to: "/docs",
+              to: "/docs/projects/overview",
             },
             {
               label: "Penetration Testing",
