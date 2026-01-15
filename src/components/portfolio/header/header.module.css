@@ -6,8 +6,17 @@
   height: 109px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
   gap: 48px;
 }
 
@@ -20,6 +29,32 @@
 }
 
 .nav a:hover {
+  text-decoration: underline;
+}
+
+.langSwitch {
+  margin-left: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.langSwitch button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.langSwitch button:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1 !important;
   text-decoration: underline;
 }
 
@@ -68,11 +103,6 @@
   font-weight: 500;
   line-height: 22px;
   padding: 12px 0;
-  font-family: var(--font-quicksand);
-}
-
-.mobileMenu a:first-child {
-  margin-top: 40px;
 }
 
 .mobileMenu a:hover {
@@ -95,14 +125,40 @@
   color: var(--color-primary);
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .layout-container {
-    align-items: flex-end !important;
-  }
 
+.mobileLangSwitch {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.mobileLangSwitch button {
+  background: none;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.mobileLangSwitch button:hover {
+  opacity: 1;
+}
+
+.mobileLangSwitch .active {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .header {
     height: 73px;
   }
+
   .nav {
     display: none;
   }
@@ -111,26 +167,14 @@
     display: flex;
   }
 
-  .mobileMenu {
-    display: flex;
+  .container {
+    justify-content: flex-end;
+    padding: 24px 39px 40px 26px;
   }
 
   .mobileMenu a {
     font-size: 22px;
     font-weight: 600;
     line-height: 120%;
-  }
-
-  .container {
-    justify-content: flex-end;
-    padding-top: 24px;
-    padding-bottom: 40px;
-    padding-left: 26px;
-    padding-right: 39px;
-  }
-
-  .mobileMenu {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
