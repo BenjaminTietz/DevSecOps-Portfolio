@@ -44,7 +44,9 @@ const Contact: React.FC = () => {
                 src={useBaseUrl("/img/portfolio/icons/mail.png")}
                 alt="Mail"
               />
-              <a href="mailto:felix.wallke@gmail.com">felix.wallke@gmail.com</a>
+              <a href="mailto:mail@benjamin-tietz.com">
+                mail@benjamin-tietz.com
+              </a>
             </div>
 
             <div className={styles.contactItem}>
@@ -52,7 +54,11 @@ const Contact: React.FC = () => {
                 src={useBaseUrl("/img/portfolio/icons/linkedin.png")}
                 alt="LinkedIn"
               />
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://linkedin.com/in/benjamin-tietz"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn profile
               </a>
             </div>

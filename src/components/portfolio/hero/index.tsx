@@ -17,6 +17,13 @@ const Hero: React.FC = () => {
 
           <div className={styles.mobileWrapper}>
             <div className={styles.textBottom}>
+              <div className={styles.imageWrapperMobile}>
+                <img
+                  src={useBaseUrl("/img/portfolio/benjamin.webp")}
+                  alt="Benjamin Tietz DevSecOps Engineer"
+                  className={styles.image}
+                />
+              </div>
               <p className={styles.description}>
                 During my DevSecOps journey, I had the opportunity to work on a
                 variety of practical projects that closely reflect real-world

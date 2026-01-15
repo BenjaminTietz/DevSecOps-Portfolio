@@ -20,7 +20,7 @@
   --color-primary-soft: #266ad91a;
 
   --color-surface: #344054;
-  --color-surface-alt: #5b7192;
+  --color-surface-alt: #2f4563;
   --color-surface-muted: #34424d;
   --color-text-soft: rgba(255, 255, 255, 0.2);
   --color-text-tint: rgba(255, 255, 255, 0.33);
@@ -44,8 +44,7 @@
 
   --color-bg: #266ad9;
   --color-surface: #344054;
-  --color-surface-alt: #5b7192;
-
+  --color-surface-alt: #2f4563;
   background-color: var(--color-bg);
   color: var(--color-text);
 
